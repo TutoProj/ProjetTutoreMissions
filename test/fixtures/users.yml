@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  civilite: MyString
+  nom: MyString
+  prenom: MyString
+  grade: MyString
+  adresse_familiale: MyString
+  adresse_administrative: MyString
+  indice_majore: 1
+  equipe: MyString
+  departement: MyString
+  rib_valide: false
+  nom_banque: MyString
+  passwd: MyString
+
+two:
+  civilite: MyString
+  nom: MyString
+  prenom: MyString
+  grade: MyString
+  adresse_familiale: MyString
+  adresse_administrative: MyString
+  indice_majore: 1
+  equipe: MyString
+  departement: MyString
+  rib_valide: false
+  nom_banque: MyString
+  passwd: MyString

@@ -1,0 +1,65 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :civilite %><br />
+    <%= f.text_field :civilite %>
+  </div>
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :prenom %><br />
+    <%= f.text_field :prenom %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br />
+    <%= f.text_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :adresse_familiale %><br />
+    <%= f.text_field :adresse_familiale %>
+  </div>
+  <div class="field">
+    <%= f.label :adresse_administrative %><br />
+    <%= f.text_field :adresse_administrative %>
+  </div>
+  <div class="field">
+    <%= f.label :indice_majore %><br />
+    <%= f.number_field :indice_majore %>
+  </div>
+  <div class="field">
+    <%= f.label :equipe %><br />
+    <%= f.text_field :equipe %>
+  </div>
+  <div class="field">
+    <%= f.label :departement %><br />
+    <%= f.text_field :departement %>
+  </div>
+  <div class="field">
+    <%= f.label :rib_valide %><br />
+    <%= f.check_box :rib_valide %>
+  </div>
+  <div class="field">
+    <%= f.label :nom_banque %><br />
+    <%= f.text_field :nom_banque %>
+  </div>
+  <div class="field">
+    <%= f.label :passwd %><br />
+    <%= f.text_field :passwd %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

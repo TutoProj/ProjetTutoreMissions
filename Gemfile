@@ -21,6 +21,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# To use enum in the application
+gem 'active_enum'
+
+# To use a simple form with simple_form
+gem 'simple_form'
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
