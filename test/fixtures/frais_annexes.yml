@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  natureDepense: MyString
+  depense: 1
+  nbJustificatifs: 1
+  rembourse: false
+
+two:
+  natureDepense: MyString
+  depense: 1
+  nbJustificatifs: 1
+  rembourse: false

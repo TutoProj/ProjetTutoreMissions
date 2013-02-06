@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nbnuiteeavecfrais:</b>
+  <%= @frais_hebergement.nbNuiteeAvecFrais %>
+</p>
+
+<p>
+  <b>Nbjustificatifs:</b>
+  <%= @frais_hebergement.nbJustificatifs %>
+</p>
+
+<p>
+  <b>Montant:</b>
+  <%= @frais_hebergement.montant %>
+</p>
+
+<p>
+  <b>Rembourse:</b>
+  <%= @frais_hebergement.rembourse %>
+</p>
+
+<p>
+  <b>Logedansautrelogement:</b>
+  <%= @frais_hebergement.logeDansAutreLogement %>
+</p>
+
+
+<%= link_to 'Edit', edit_frais_hebergement_path(@frais_hebergement) %> |
+<%= link_to 'Back', frais_hebergements_path %>

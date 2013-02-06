@@ -1,0 +1,2 @@
+module MoyenTransportsHelper
+end

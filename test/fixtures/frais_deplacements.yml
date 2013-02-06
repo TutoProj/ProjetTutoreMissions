@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  demandeAvance: false
+  regularisationDAvance: false
+  forfait: false
+  montant: 1
+
+two:
+  demandeAvance: false
+  regularisationDAvance: false
+  forfait: false
+  montant: 1

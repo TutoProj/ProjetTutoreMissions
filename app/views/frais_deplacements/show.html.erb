@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Demandeavance:</b>
+  <%= @frais_deplacement.demandeAvance %>
+</p>
+
+<p>
+  <b>Regularisationdavance:</b>
+  <%= @frais_deplacement.regularisationDAvance %>
+</p>
+
+<p>
+  <b>Forfait:</b>
+  <%= @frais_deplacement.forfait %>
+</p>
+
+<p>
+  <b>Montant:</b>
+  <%= @frais_deplacement.montant %>
+</p>
+
+
+<%= link_to 'Edit', edit_frais_deplacement_path(@frais_deplacement) %> |
+<%= link_to 'Back', frais_deplacements_path %>

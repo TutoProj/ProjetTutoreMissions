@@ -1,0 +1,39 @@
+<h1>Listing frais_repas</h1>
+
+<table>
+  <tr>
+    <th>Nbrepasdansrestaurantadmin</th>
+    <th>Nbjustificatifsrestauadmin</th>
+    <th>Montantrestauadmin</th>
+    <th>Rembourserestauadmin</th>
+    <th>Autresfraisrestaus</th>
+    <th>Nbjustificatifsautres</th>
+    <th>Montantautres</th>
+    <th>Rembourse</th>
+    <th>Nbrepasgratuits</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @frais_repas.each do |frais_repa| %>
+  <tr>
+    <td><%= frais_repa.nbRepasDansRestaurantAdmin %></td>
+    <td><%= frais_repa.NbJustificatifsRestauAdmin %></td>
+    <td><%= frais_repa.montantRestauAdmin %></td>
+    <td><%= frais_repa.rembourseRestauAdmin %></td>
+    <td><%= frais_repa.autresFraisRestaus %></td>
+    <td><%= frais_repa.nbJustificatifsAutres %></td>
+    <td><%= frais_repa.montantAutres %></td>
+    <td><%= frais_repa.rembourse %></td>
+    <td><%= frais_repa.nbRepasGratuits %></td>
+    <td><%= link_to 'Show', frais_repa %></td>
+    <td><%= link_to 'Edit', edit_frais_repa_path(frais_repa) %></td>
+    <td><%= link_to 'Destroy', frais_repa, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Frais repa', new_frais_repa_path %>

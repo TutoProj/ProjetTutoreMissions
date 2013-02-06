@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Distance:</b>
+  <%= @itineraire.distance %>
+</p>
+
+<p>
+  <b>Dateheuredepartresidence:</b>
+  <%= @itineraire.DateHeureDepartResidence %>
+</p>
+
+<p>
+  <b>Datearriveelieumission:</b>
+  <%= @itineraire.DateArriveeLieuMission %>
+</p>
+
+<p>
+  <b>Dateheuredepartlieumission:</b>
+  <%= @itineraire.DateHeureDepartLieuMission %>
+</p>
+
+<p>
+  <b>Dateheureretourresidence:</b>
+  <%= @itineraire.DateHeureRetourResidence %>
+</p>
+
+<p>
+  <b>Montant:</b>
+  <%= @itineraire.montant %>
+</p>
+
+<p>
+  <b>Rembourse:</b>
+  <%= @itineraire.rembourse %>
+</p>
+
+
+<%= link_to 'Edit', edit_itineraire_path(@itineraire) %> |
+<%= link_to 'Back', itineraires_path %>

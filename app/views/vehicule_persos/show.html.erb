@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nummineralogique:</b>
+  <%= @vehicule_perso.numMineralogique %>
+</p>
+
+<p>
+  <b>Puissancevehicule:</b>
+  <%= @vehicule_perso.puissanceVehicule %>
+</p>
+
+<p>
+  <b>Dateautorisationannuelledutilisation:</b>
+  <%= @vehicule_perso.DateAutorisationAnnuelleDUtilisation %>
+</p>
+
+<p>
+  <b>Departement:</b>
+  <%= @vehicule_perso.departement %>
+</p>
+
+<p>
+  <b>Academie:</b>
+  <%= @vehicule_perso.academie %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehicule_perso_path(@vehicule_perso) %> |
+<%= link_to 'Back', vehicule_persos_path %>

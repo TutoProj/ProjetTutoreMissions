@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nbrepasdansrestaurantadmin:</b>
+  <%= @frais_repa.nbRepasDansRestaurantAdmin %>
+</p>
+
+<p>
+  <b>Nbjustificatifsrestauadmin:</b>
+  <%= @frais_repa.NbJustificatifsRestauAdmin %>
+</p>
+
+<p>
+  <b>Montantrestauadmin:</b>
+  <%= @frais_repa.montantRestauAdmin %>
+</p>
+
+<p>
+  <b>Rembourserestauadmin:</b>
+  <%= @frais_repa.rembourseRestauAdmin %>
+</p>
+
+<p>
+  <b>Autresfraisrestaus:</b>
+  <%= @frais_repa.autresFraisRestaus %>
+</p>
+
+<p>
+  <b>Nbjustificatifsautres:</b>
+  <%= @frais_repa.nbJustificatifsAutres %>
+</p>
+
+<p>
+  <b>Montantautres:</b>
+  <%= @frais_repa.montantAutres %>
+</p>
+
+<p>
+  <b>Rembourse:</b>
+  <%= @frais_repa.rembourse %>
+</p>
+
+<p>
+  <b>Nbrepasgratuits:</b>
+  <%= @frais_repa.nbRepasGratuits %>
+</p>
+
+
+<%= link_to 'Edit', edit_frais_repa_path(@frais_repa) %> |
+<%= link_to 'Back', frais_repas_path %>

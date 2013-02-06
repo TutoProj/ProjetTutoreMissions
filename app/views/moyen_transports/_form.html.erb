@@ -1,0 +1,31 @@
+<%= simple_form_for(@moyen_transport) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :avion %>
+    <%= f.input :parkingAeroport %>
+    <%= f.input :train %>
+    <%= f.input :class %>
+    <%= f.input :parkingGare %>
+    <%= f.input :reservation %>
+    <%= f.input :couchette %>
+    <%= f.input :wagonLit %>
+    <%= f.input :supplements %>
+    <%= f.input :taxi %>
+    <%= f.input :vehiculeLoue %>
+    <%= f.input :metro %>
+    <%= f.input :rer %>
+    <%= f.input :autobus %>
+    <%= f.input :tramway %>
+    <%= f.input :missionAvecTransport %>
+    <%= f.input :vehiculeAdmin %>
+    <%= f.input :fraisAutoroute %>
+    <%= f.input :parking %>
+    <%= f.input :vehiculePerso %>
+    <%= f.input :demandeAutorisationPonctuelleVehicule %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

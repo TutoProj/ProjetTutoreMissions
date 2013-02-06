@@ -1,4 +1,25 @@
 ProjetTutoreMissions::Application.routes.draw do
+  resources :frais_annexes
+
+
+  resources :frais_repas
+
+
+  resources :frais_hebergements
+
+
+  resources :itineraires
+
+
+  resources :vehicule_persos
+
+
+  resources :frais_deplacements
+
+
+  resources :moyen_transports
+
+
   resources :missions
 
 

@@ -1,0 +1,19 @@
+<%= simple_form_for(@frais_repa) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nbRepasDansRestaurantAdmin %>
+    <%= f.input :NbJustificatifsRestauAdmin %>
+    <%= f.input :montantRestauAdmin %>
+    <%= f.input :rembourseRestauAdmin %>
+    <%= f.input :autresFraisRestaus %>
+    <%= f.input :nbJustificatifsAutres %>
+    <%= f.input :montantAutres %>
+    <%= f.input :rembourse %>
+    <%= f.input :nbRepasGratuits %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

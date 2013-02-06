@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Naturedepense:</b>
+  <%= @frais_annex.natureDepense %>
+</p>
+
+<p>
+  <b>Depense:</b>
+  <%= @frais_annex.depense %>
+</p>
+
+<p>
+  <b>Nbjustificatifs:</b>
+  <%= @frais_annex.nbJustificatifs %>
+</p>
+
+<p>
+  <b>Rembourse:</b>
+  <%= @frais_annex.rembourse %>
+</p>
+
+
+<%= link_to 'Edit', edit_frais_annex_path(@frais_annex) %> |
+<%= link_to 'Back', frais_annexes_path %>

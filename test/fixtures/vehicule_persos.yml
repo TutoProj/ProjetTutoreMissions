@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numMineralogique: MyString
+  puissanceVehicule: 1
+  DateAutorisationAnnuelleDUtilisation: 2013-02-06
+  departement: MyString
+  academie: MyString
+
+two:
+  numMineralogique: MyString
+  puissanceVehicule: 1
+  DateAutorisationAnnuelleDUtilisation: 2013-02-06
+  departement: MyString
+  academie: MyString

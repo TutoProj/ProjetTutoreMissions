@@ -1,0 +1,29 @@
+<h1>Listing frais_annexes</h1>
+
+<table>
+  <tr>
+    <th>Naturedepense</th>
+    <th>Depense</th>
+    <th>Nbjustificatifs</th>
+    <th>Rembourse</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @frais_annexes.each do |frais_annex| %>
+  <tr>
+    <td><%= frais_annex.natureDepense %></td>
+    <td><%= frais_annex.depense %></td>
+    <td><%= frais_annex.nbJustificatifs %></td>
+    <td><%= frais_annex.rembourse %></td>
+    <td><%= link_to 'Show', frais_annex %></td>
+    <td><%= link_to 'Edit', edit_frais_annex_path(frais_annex) %></td>
+    <td><%= link_to 'Destroy', frais_annex, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Frais annex', new_frais_annex_path %>

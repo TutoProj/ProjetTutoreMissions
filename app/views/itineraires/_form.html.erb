@@ -1,0 +1,17 @@
+<%= simple_form_for(@itineraire) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :distance %>
+    <%= f.input :DateHeureDepartResidence %>
+    <%= f.input :DateArriveeLieuMission %>
+    <%= f.input :DateHeureDepartLieuMission %>
+    <%= f.input :DateHeureRetourResidence %>
+    <%= f.input :montant %>
+    <%= f.input :rembourse %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

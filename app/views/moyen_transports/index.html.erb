@@ -1,0 +1,63 @@
+<h1>Listing moyen_transports</h1>
+
+<table>
+  <tr>
+    <th>Avion</th>
+    <th>Parkingaeroport</th>
+    <th>Train</th>
+    <th>Class</th>
+    <th>Parkinggare</th>
+    <th>Reservation</th>
+    <th>Couchette</th>
+    <th>Wagonlit</th>
+    <th>Supplements</th>
+    <th>Taxi</th>
+    <th>Vehiculeloue</th>
+    <th>Metro</th>
+    <th>Rer</th>
+    <th>Autobus</th>
+    <th>Tramway</th>
+    <th>Missionavectransport</th>
+    <th>Vehiculeadmin</th>
+    <th>Fraisautoroute</th>
+    <th>Parking</th>
+    <th>Vehiculeperso</th>
+    <th>Demandeautorisationponctuellevehicule</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @moyen_transports.each do |moyen_transport| %>
+  <tr>
+    <td><%= moyen_transport.avion %></td>
+    <td><%= moyen_transport.parkingAeroport %></td>
+    <td><%= moyen_transport.train %></td>
+    <td><%= moyen_transport.class %></td>
+    <td><%= moyen_transport.parkingGare %></td>
+    <td><%= moyen_transport.reservation %></td>
+    <td><%= moyen_transport.couchette %></td>
+    <td><%= moyen_transport.wagonLit %></td>
+    <td><%= moyen_transport.supplements %></td>
+    <td><%= moyen_transport.taxi %></td>
+    <td><%= moyen_transport.vehiculeLoue %></td>
+    <td><%= moyen_transport.metro %></td>
+    <td><%= moyen_transport.rer %></td>
+    <td><%= moyen_transport.autobus %></td>
+    <td><%= moyen_transport.tramway %></td>
+    <td><%= moyen_transport.missionAvecTransport %></td>
+    <td><%= moyen_transport.vehiculeAdmin %></td>
+    <td><%= moyen_transport.fraisAutoroute %></td>
+    <td><%= moyen_transport.parking %></td>
+    <td><%= moyen_transport.vehiculePerso %></td>
+    <td><%= moyen_transport.demandeAutorisationPonctuelleVehicule %></td>
+    <td><%= link_to 'Show', moyen_transport %></td>
+    <td><%= link_to 'Edit', edit_moyen_transport_path(moyen_transport) %></td>
+    <td><%= link_to 'Destroy', moyen_transport, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Moyen transport', new_moyen_transport_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nbNuiteeAvecFrais: 1
+  nbJustificatifs: 1
+  montant: 1
+  rembourse: false
+  logeDansAutreLogement: false
+
+two:
+  nbNuiteeAvecFrais: 1
+  nbJustificatifs: 1
+  montant: 1
+  rembourse: false
+  logeDansAutreLogement: false

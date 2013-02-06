@@ -1,0 +1,29 @@
+<h1>Listing frais_deplacements</h1>
+
+<table>
+  <tr>
+    <th>Demandeavance</th>
+    <th>Regularisationdavance</th>
+    <th>Forfait</th>
+    <th>Montant</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @frais_deplacements.each do |frais_deplacement| %>
+  <tr>
+    <td><%= frais_deplacement.demandeAvance %></td>
+    <td><%= frais_deplacement.regularisationDAvance %></td>
+    <td><%= frais_deplacement.forfait %></td>
+    <td><%= frais_deplacement.montant %></td>
+    <td><%= link_to 'Show', frais_deplacement %></td>
+    <td><%= link_to 'Edit', edit_frais_deplacement_path(frais_deplacement) %></td>
+    <td><%= link_to 'Destroy', frais_deplacement, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Frais deplacement', new_frais_deplacement_path %>

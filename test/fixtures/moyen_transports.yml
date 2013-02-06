@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  avion: false
+  parkingAeroport: false
+  train: false
+  class: false
+  parkingGare: false
+  reservation: false
+  couchette: false
+  wagonLit: false
+  supplements: false
+  taxi: false
+  vehiculeLoue: false
+  metro: false
+  rer: false
+  autobus: false
+  tramway: false
+  missionAvecTransport: false
+  vehiculeAdmin: false
+  fraisAutoroute: false
+  parking: false
+  vehiculePerso: false
+  demandeAutorisationPonctuelleVehicule: false
+
+two:
+  avion: false
+  parkingAeroport: false
+  train: false
+  class: false
+  parkingGare: false
+  reservation: false
+  couchette: false
+  wagonLit: false
+  supplements: false
+  taxi: false
+  vehiculeLoue: false
+  metro: false
+  rer: false
+  autobus: false
+  tramway: false
+  missionAvecTransport: false
+  vehiculeAdmin: false
+  fraisAutoroute: false
+  parking: false
+  vehiculePerso: false
+  demandeAutorisationPonctuelleVehicule: false

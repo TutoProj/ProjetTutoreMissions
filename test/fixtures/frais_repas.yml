@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nbRepasDansRestaurantAdmin: 1
+  NbJustificatifsRestauAdmin: 1
+  montantRestauAdmin: 1
+  rembourseRestauAdmin: false
+  autresFraisRestaus: false
+  nbJustificatifsAutres: 1
+  montantAutres: 1
+  rembourse: false
+  nbRepasGratuits: 1
+
+two:
+  nbRepasDansRestaurantAdmin: 1
+  NbJustificatifsRestauAdmin: 1
+  montantRestauAdmin: 1
+  rembourseRestauAdmin: false
+  autresFraisRestaus: false
+  nbJustificatifsAutres: 1
+  montantAutres: 1
+  rembourse: false
+  nbRepasGratuits: 1
