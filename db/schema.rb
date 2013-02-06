@@ -10,7 +10,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130204220647) do
+ActiveRecord::Schema.define(:version => 20130206081949) do
+
+  create_table "missions", :force => true do |t|
+    t.string   "compteUser"
+    t.integer  "NumConvention"
+    t.string   "destination"
+    t.string   "imputation"
+    t.integer  "numMarche"
+    t.boolean  "frais"
+    t.boolean  "permanant"
+    t.date     "dateDepart"
+    t.date     "dateRetour"
+    t.string   "motifDeplacement"
+    t.string   "status"
+    t.date     "dateClotureMission"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "civilite"

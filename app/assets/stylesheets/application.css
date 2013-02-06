@@ -11,6 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-*= require formtastic
-*= my_formtastic_changes

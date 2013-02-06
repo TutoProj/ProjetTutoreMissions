@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Compteuser:</b>
+  <%= @mission.compteUser %>
+</p>
+
+<p>
+  <b>Numconvention:</b>
+  <%= @mission.NumConvention %>
+</p>
+
+<p>
+  <b>Destination:</b>
+  <%= @mission.destination %>
+</p>
+
+<p>
+  <b>Imputation:</b>
+  <%= @mission.imputation %>
+</p>
+
+<p>
+  <b>Nummarche:</b>
+  <%= @mission.numMarche %>
+</p>
+
+<p>
+  <b>Frais:</b>
+  <%= @mission.frais %>
+</p>
+
+<p>
+  <b>Permanant:</b>
+  <%= @mission.permanant %>
+</p>
+
+<p>
+  <b>Datedepart:</b>
+  <%= @mission.dateDepart %>
+</p>
+
+<p>
+  <b>Dateretour:</b>
+  <%= @mission.dateRetour %>
+</p>
+
+<p>
+  <b>Motifdeplacement:</b>
+  <%= @mission.motifDeplacement %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @mission.status %>
+</p>
+
+<p>
+  <b>Datecloturemission:</b>
+  <%= @mission.dateClotureMission %>
+</p>
+
+
+<%= link_to 'Edit', edit_mission_path(@mission) %> |
+<%= link_to 'Back', missions_path %>

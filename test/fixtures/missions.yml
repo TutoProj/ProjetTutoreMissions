@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  compteUser: MyString
+  NumConvention: 1
+  destination: MyString
+  imputation: MyString
+  numMarche: 1
+  frais: false
+  permanant: false
+  dateDepart: 2013-02-06
+  dateRetour: 2013-02-06
+  motifDeplacement: MyString
+  status: MyString
+  dateClotureMission: 2013-02-06
+
+two:
+  compteUser: MyString
+  NumConvention: 1
+  destination: MyString
+  imputation: MyString
+  numMarche: 1
+  frais: false
+  permanant: false
+  dateDepart: 2013-02-06
+  dateRetour: 2013-02-06
+  motifDeplacement: MyString
+  status: MyString
+  dateClotureMission: 2013-02-06

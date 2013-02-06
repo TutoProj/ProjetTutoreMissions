@@ -1,4 +1,7 @@
 ProjetTutoreMissions::Application.routes.draw do
+  resources :missions
+
+
   resources :users
 
 

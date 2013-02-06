@@ -1,0 +1,22 @@
+<%= simple_form_for(@mission) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :compteUser %>
+    <%= f.input :NumConvention %>
+    <%= f.input :destination %>
+    <%= f.input :imputation %>
+    <%= f.input :numMarche %>
+    <%= f.input :frais %>
+    <%= f.input :permanant %>
+    <%= f.input :dateDepart %>
+    <%= f.input :dateRetour %>
+    <%= f.input :motifDeplacement %>
+    <%= f.input :status %>
+    <%= f.input :dateClotureMission %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

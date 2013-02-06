@@ -1,0 +1,45 @@
+<h1>Listing missions</h1>
+
+<table>
+  <tr>
+    <th>Compteuser</th>
+    <th>Numconvention</th>
+    <th>Destination</th>
+    <th>Imputation</th>
+    <th>Nummarche</th>
+    <th>Frais</th>
+    <th>Permanant</th>
+    <th>Datedepart</th>
+    <th>Dateretour</th>
+    <th>Motifdeplacement</th>
+    <th>Status</th>
+    <th>Datecloturemission</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @missions.each do |mission| %>
+  <tr>
+    <td><%= mission.compteUser %></td>
+    <td><%= mission.NumConvention %></td>
+    <td><%= mission.destination %></td>
+    <td><%= mission.imputation %></td>
+    <td><%= mission.numMarche %></td>
+    <td><%= mission.frais %></td>
+    <td><%= mission.permanant %></td>
+    <td><%= mission.dateDepart %></td>
+    <td><%= mission.dateRetour %></td>
+    <td><%= mission.motifDeplacement %></td>
+    <td><%= mission.status %></td>
+    <td><%= mission.dateClotureMission %></td>
+    <td><%= link_to 'Show', mission %></td>
+    <td><%= link_to 'Edit', edit_mission_path(mission) %></td>
+    <td><%= link_to 'Destroy', mission, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mission', new_mission_path %>
