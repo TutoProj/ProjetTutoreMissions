@@ -6,7 +6,7 @@
 #  avion                                 :boolean
 #  parkingAeroport                       :boolean
 #  train                                 :boolean
-#  class                                 :boolean
+#  classe                                :boolean
 #  parkingGare                           :boolean
 #  reservation                           :boolean
 #  couchette                             :boolean
