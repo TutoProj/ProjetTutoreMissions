@@ -1,47 +1,101 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# == Schema Information
+#
+# Table name: moyen_transports
+#
+#  id                                    :integer          not null, primary key
+#  avion                                 :boolean
+#  parkingAeroport                       :boolean
+#  train                                 :boolean
+#  classe                                 :boolean
+#  parkingGare                           :boolean
+#  reservation                           :boolean
+#  couchette                             :boolean
+#  wagonLit                              :boolean
+#  supplements                           :boolean
+#  taxi                                  :boolean
+#  vehiculeLoue                          :boolean
+#  metro                                 :boolean
+#  rer                                   :boolean
+#  autobus                               :boolean
+#  tramway                               :boolean
+#  missionAvecTransport                  :boolean
+#  vehiculeAdmin                         :boolean
+#  fraisAutoroute                        :boolean
+#  parking                               :boolean
+#  vehiculePerso                         :boolean
+#  demandeAutorisationPonctuelleVehicule :boolean
+#  created_at                            :datetime         not null
+#  updated_at                            :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classees/ActiveRecord/Fixtures.html
 
 one:
-  avion: false
-  parkingAeroport: false
-  train: false
-  class: false
-  parkingGare: false
-  reservation: false
-  couchette: false
-  wagonLit: false
-  supplements: false
-  taxi: false
-  vehiculeLoue: false
-  metro: false
-  rer: false
-  autobus: false
-  tramway: false
-  missionAvecTransport: false
-  vehiculeAdmin: false
-  fraisAutoroute: false
-  parking: false
-  vehiculePerso: false
-  demandeAutorisationPonctuelleVehicule: false
+  avion: true
+  parkingAeroport: true
+  train: true
+  classe: true
+  parkingGare: true
+  reservation: true
+  couchette: true
+  wagonLit: true
+  supplements: true
+  taxi: true
+  vehiculeLoue: true
+  metro: true
+  rer: true
+  autobus: true
+  tramway: true
+  missionAvecTransport: true
+  vehiculeAdmin: true
+  fraisAutoroute: true
+  parking: true
+  vehiculePerso: true
+  demandeAutorisationPonctuelleVehicule: true
 
 two:
-  avion: false
+  avion: true
+  parkingAeroport: true
+  train: true
+  classe: true
+  parkingGare: true
+  reservation: true
+  couchette: true
+  wagonLit: true
+  supplements: true
+  taxi: true
+  vehiculeLoue: true
+  metro: true
+  rer: true
+  autobus: true
+  tramway: true
+  missionAvecTransport: true
+  vehiculeAdmin: true
+  fraisAutoroute: true
+  parking: true
+  vehiculePerso: true
+  demandeAutorisationPonctuelleVehicule: true
+
+test:
+  avion: true
   parkingAeroport: false
-  train: false
-  class: false
-  parkingGare: false
-  reservation: false
-  couchette: false
-  wagonLit: false
-  supplements: false
-  taxi: false
-  vehiculeLoue: false
-  metro: false
-  rer: false
-  autobus: false
-  tramway: false
-  missionAvecTransport: false
-  vehiculeAdmin: false
-  fraisAutoroute: false
-  parking: false
-  vehiculePerso: false
-  demandeAutorisationPonctuelleVehicule: false
+  train: true
+  classe: true
+  parkingGare: true
+  reservation: true
+  couchette: true
+  wagonLit: true
+  supplements: true
+  taxi: true
+  vehiculeLoue: true
+  metro: true
+  rer: true
+  autobus: true
+  tramway: true
+  missionAvecTransport: true
+  vehiculeAdmin: true
+  fraisAutoroute: true
+  parking: true
+  vehiculePerso: true
+  demandeAutorisationPonctuelleVehicule: true
+

@@ -10,7 +10,61 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130206081949) do
+ActiveRecord::Schema.define(:version => 20130207122131) do
+
+  create_table "frais_annexes", :force => true do |t|
+    t.string   "natureDepense"
+    t.integer  "depense"
+    t.integer  "nbJustificatifs"
+    t.boolean  "rembourse"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "frais_deplacements", :force => true do |t|
+    t.boolean  "demandeAvance"
+    t.boolean  "regularisationDAvance"
+    t.boolean  "forfait"
+    t.integer  "montant"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
+
+  create_table "frais_hebergements", :force => true do |t|
+    t.integer  "nbNuiteeAvecFrais"
+    t.integer  "nbJustificatifs"
+    t.integer  "montant"
+    t.boolean  "rembourse"
+    t.boolean  "logeDansAutreLogement"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
+
+  create_table "frais_repas", :force => true do |t|
+    t.integer  "nbRepasDansRestaurantAdmin"
+    t.integer  "NbJustificatifsRestauAdmin"
+    t.integer  "montantRestauAdmin"
+    t.boolean  "rembourseRestauAdmin"
+    t.boolean  "autresFraisRestaus"
+    t.integer  "nbJustificatifsAutres"
+    t.integer  "montantAutres"
+    t.boolean  "rembourse"
+    t.integer  "nbRepasGratuits"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+  end
+
+  create_table "itineraires", :force => true do |t|
+    t.integer  "distance"
+    t.date     "DateHeureDepartResidence"
+    t.date     "DateArriveeLieuMission"
+    t.date     "DateHeureDepartLieuMission"
+    t.string   "DateHeureRetourResidence"
+    t.integer  "montant"
+    t.boolean  "rembourse"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+  end
 
   create_table "missions", :force => true do |t|
     t.string   "compteUser"
@@ -29,6 +83,32 @@ ActiveRecord::Schema.define(:version => 20130206081949) do
     t.datetime "updated_at",         :null => false
   end
 
+  create_table "moyen_transports", :force => true do |t|
+    t.boolean  "avion"
+    t.boolean  "parkingAeroport"
+    t.boolean  "train"
+    t.boolean  "classe"
+    t.boolean  "parkingGare"
+    t.boolean  "reservation"
+    t.boolean  "couchette"
+    t.boolean  "wagonLit"
+    t.boolean  "supplements"
+    t.boolean  "taxi"
+    t.boolean  "vehiculeLoue"
+    t.boolean  "metro"
+    t.boolean  "rer"
+    t.boolean  "autobus"
+    t.boolean  "tramway"
+    t.boolean  "missionAvecTransport"
+    t.boolean  "vehiculeAdmin"
+    t.boolean  "fraisAutoroute"
+    t.boolean  "parking"
+    t.boolean  "vehiculePerso"
+    t.boolean  "demandeAutorisationPonctuelleVehicule"
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "civilite"
     t.string   "nom"
@@ -44,6 +124,16 @@ ActiveRecord::Schema.define(:version => 20130206081949) do
     t.string   "passwd"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
+  end
+
+  create_table "vehicule_persos", :force => true do |t|
+    t.string   "numMineralogique"
+    t.integer  "puissanceVehicule"
+    t.date     "DateAutorisationAnnuelleDUtilisation"
+    t.string   "departement"
+    t.string   "academie"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
   end
 
 end

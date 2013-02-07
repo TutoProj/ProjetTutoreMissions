@@ -1,3 +1,24 @@
+# == Schema Information
+#
+# Table name: missions
+#
+#  id                 :integer          not null, primary key
+#  compteUser         :string(255)
+#  NumConvention      :integer
+#  destination        :string(255)
+#  imputation         :string(255)
+#  numMarche          :integer
+#  frais              :boolean
+#  permanant          :boolean
+#  dateDepart         :date
+#  dateRetour         :date
+#  motifDeplacement   :string(255)
+#  status             :string(255)
+#  dateClotureMission :date
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
@@ -11,7 +32,7 @@ one:
   dateDepart: 2013-02-06
   dateRetour: 2013-02-06
   motifDeplacement: MyString
-  status: MyString
+  status: "Aucun"
   dateClotureMission: 2013-02-06
 
 two:

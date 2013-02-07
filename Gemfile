@@ -21,6 +21,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# To annotate the models
+gem 'annotate'
+
 # To use enum in the application
 gem 'active_enum'
 
