@@ -21,9 +21,9 @@
 #
 
 class Status < ActiveEnum::Base
-  value :name => "Aucun"
-  value :name => "Autorisé"
-  value :name => "Remboursé"
+  value 1 => "Aucun"
+  value 2 => "Autorisé"
+  value 3 => "Remboursé"
 end
 
 class Mission < ActiveRecord::Base

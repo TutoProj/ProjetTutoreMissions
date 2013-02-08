@@ -20,9 +20,9 @@
 #
 
 class Civilites < ActiveEnum::Base
-  value :name => "Mr"
-  value :name => "Mme"
-  value :name => "Mlle"
+  value 1 => "Mr"
+  value 2 => "Mme"
+  value 3 => "Mlle"
 end
 
 class User < ActiveRecord::Base
@@ -30,8 +30,6 @@ class User < ActiveRecord::Base
 
   enumerate :civilite, :with => Civilites
   
-  validates_inclusion_of :civilite, :in => Civilites
-
   validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :passwd, :prenom
 
   validates :passwd, :confirmation => true
