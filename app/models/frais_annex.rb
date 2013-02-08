@@ -13,4 +13,8 @@
 
 class FraisAnnex < ActiveRecord::Base
   attr_accessible :depense, :natureDepense, :nbJustificatifs, :rembourse
+
+  belongs_to :mission
+
+  validates_presence_of :depense, :natureDepense, :nbJustificatifs 
 end

@@ -16,4 +16,9 @@
 
 class Itineraire < ActiveRecord::Base
   attr_accessible :DateArriveeLieuMission, :DateHeureDepartLieuMission, :DateHeureDepartResidence, :DateHeureRetourResidence, :distance, :montant, :rembourse
+
+  belongs_to :mission
+
+  validates_presence_of :DateArriveeLieuMission, :DateHeureDepartLieuMission, :DateHeureDepartResidence, :DateHeureRetourResidence, :distance, :montant
+
 end

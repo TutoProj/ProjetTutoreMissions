@@ -14,4 +14,9 @@
 
 class FraisHebergement < ActiveRecord::Base
   attr_accessible :logeDansAutreLogement, :montant, :nbJustificatifs, :nbNuiteeAvecFrais, :rembourse
+
+  belongs_to :mission
+
+  validates_presence_of :montant, :nbJustificatifs, :nbNuiteeAvecFrais
+
 end

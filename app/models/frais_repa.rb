@@ -18,4 +18,9 @@
 
 class FraisRepa < ActiveRecord::Base
   attr_accessible :NbJustificatifsRestauAdmin, :autresFraisRestaus, :montantAutres, :montantRestauAdmin, :nbJustificatifsAutres, :nbRepasDansRestaurantAdmin, :nbRepasGratuits, :rembourse, :rembourseRestauAdmin
+
+  belongs_to :mission
+
+  validates_presence_of  :NbJustificatifsRestauAdmin, :montantAutres, :montantRestauAdmin, :nbJustificatifsAutres, :nbRepasDansRestaurantAdmin, :nbRepasGratuits 
+
 end

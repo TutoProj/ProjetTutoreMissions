@@ -13,4 +13,9 @@
 
 class FraisDeplacement < ActiveRecord::Base
   attr_accessible :demandeAvance, :forfait, :montant, :regularisationDAvance
+
+  belongs_to :mission
+
+  validates_presence_of :montant
+
 end

@@ -29,6 +29,13 @@ end
 class Mission < ActiveRecord::Base
   attr_accessible :NumConvention, :compteUser, :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :imputation, :motifDeplacement, :numMarche, :permanant, :status
 
+  belongs_to :user
+
+  has_many :frais_deplacements
+  has_many :frais_repas
+  has_many :frais_hebergements
+  has_many :frais_annexes
+
   enumerate :status, :with => Status
 
   validates_inclusion_of :status, :in => Status

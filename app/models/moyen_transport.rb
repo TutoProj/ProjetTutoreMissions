@@ -31,6 +31,8 @@
 class MoyenTransport < ActiveRecord::Base
 	attr_accessible :autobus, :avion, :classe, :couchette, :demandeAutorisationPonctuelleVehicule, :fraisAutoroute, :metro, :missionAvecTransport, :parking, :parkingAeroport, :parkingGare, :rer, :reservation, :supplements, :taxi, :train, :tramway, :vehiculeAdmin, :vehiculeLoue, :vehiculePerso, :wagonLit
 
+	belongs_to :mission
+
 	validates_presence_of :avion, :if => :should_validate_avion?
 
 	validates_presence_of :train, :if => :should_validate_train?

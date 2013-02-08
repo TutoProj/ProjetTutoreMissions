@@ -32,12 +32,17 @@ class User < ActiveRecord::Base
   
   validates_inclusion_of :civilite, :in => Civilites
 
-  validates :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :passwd, :prenom, :presence => true
+  validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :passwd, :prenom
 
   validates :passwd, :confirmation => true
 
+  has_many :missions
   
 
+  has_many :frais_deplacements, :through => :missions
+  has_many :frais_repas, :through => :missions
+  has_many :frais_hebergements, :through => :missions
+  has_many :frais_annexes, :through => :missions
 
-  
+
 end
