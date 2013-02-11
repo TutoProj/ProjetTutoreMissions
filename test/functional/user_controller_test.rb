@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
+  setup :activate_authlogic
+
   setup do
     @user = users(:one)
   end
@@ -18,10 +20,10 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should create user" do
     assert_difference('User.count') do
-      post :create, :user => { :login => @mission.login, :password => @mission.password, :civilite => @mission.civilite, :dateDepart => @mission.dateDepart, :dateRetour => @mission.dateRetour, :destination => @mission.destination, :frais => @mission.frais, :imputation => @mission.imputation, :motifDeplacement => @mission.motifDeplacement, :numMarche => @mission.numMarche, :permanant => @mission.permanant, :status => @mission.status }
+      post :create, :user => { :login => @user.login, :crypted_password => @user.crypted_password, :password_salt => @user.password_salt, :persistence_token => @user.persistence_token, :civilite => @user.civilite, :nom => @user.nom, :prenom => @user.prenom, :grade => @user.grade, :adresse_familiale => @user.adresse_familiale, :adresse_administrative => @user.adresse_administrative, :indice_majore => @user.indice_majore, :equipe => @user.equipe, :departement => @user.departement, :rib_valide => @user.rib_valide, :nom_banque => @user.nom_banque, :admin => @user.admin }
     end
 
-    assert_redirected_to user_path(assigns(:mission))
+    assert_redirected_to user_path(assigns(:user))
   end
 
   test "should show user" do
@@ -35,12 +37,12 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should update user" do
-    put :update, :id => @user, :mission => { :NumConvention => @mission.NumConvention, :compteUser => @mission.compteUser, :dateClotureMission => @mission.dateClotureMission, :dateDepart => @mission.dateDepart, :dateRetour => @mission.dateRetour, :destination => @mission.destination, :frais => @mission.frais, :imputation => @mission.imputation, :motifDeplacement => @mission.motifDeplacement, :numMarche => @mission.numMarche, :permanant => @mission.permanant, :status => @mission.status }
-    assert_redirected_to user_path(assigns(:mission))
+    assert_redirected_to user_path(assigns(:user))
+    put :create, :user => { :login => @user.login, :crypted_password => @user.crypted_password, :password_salt => @user.password_salt, :persistence_token => @user.persistence_token, :civilite => @user.civilite, :nom => @user.nom, :prenom => @user.prenom, :grade => @user.grade, :adresse_familiale => @user.adresse_familiale, :adresse_administrative => @user.adresse_administrative, :indice_majore => @user.indice_majore, :equipe => @user.equipe, :departement => @user.departement, :rib_valide => @user.rib_valide, :nom_banque => @user.nom_banque, :admin => @user.admin }
   end
 
   test "should destroy user" do
-    assert_difference('Mission.count', -1) do
+    assert_difference('User.count', -1) do
       delete :destroy, :id => @user
     end
 

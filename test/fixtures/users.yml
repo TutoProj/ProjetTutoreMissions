@@ -37,7 +37,10 @@ one:
   departement: MyString
   rib_valide: false
   nom_banque: MyString
-  password: MyString
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt('passw0rd' + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  admin: false
 
 two:
   civilite: Mr
@@ -52,3 +55,4 @@ two:
   rib_valide: false
   nom_banque: MyString
   password: MyString
+  admin: false
