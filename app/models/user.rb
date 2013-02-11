@@ -14,9 +14,13 @@
 #  departement            :string(255)
 #  rib_valide             :boolean
 #  nom_banque             :string(255)
-#  passwd                 :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  admin                  :boolean
+#  login                  :string(255)
+#  crypted_password       :string(255)
+#  password_salt          :string(255)
+#  persistance_token      :string(255)
 #
 
 class Civilites < ActiveEnum::Base
@@ -26,13 +30,19 @@ class Civilites < ActiveEnum::Base
 end
 
 class User < ActiveRecord::Base
-  attr_accessible :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :passwd, :prenom, :rib_valide
+  acts_as_authentic
+
+  attr_accessible :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :rib_valide, :admin, :password_confirmation
+
+  attr_accessor :password_confirmation
 
   enumerate :civilite, :with => Civilites
   
-  validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :passwd, :prenom
+  validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :login
 
-  validates :passwd, :confirmation => true
+  validates :password, :confirmation => true
+
+  validates_confirmation_of :password
 
   has_many :missions
   
@@ -41,6 +51,5 @@ class User < ActiveRecord::Base
   has_many :frais_repas, :through => :missions
   has_many :frais_hebergements, :through => :missions
   has_many :frais_annexes, :through => :missions
-
 
 end

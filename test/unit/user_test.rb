@@ -14,9 +14,13 @@
 #  departement            :string(255)
 #  rib_valide             :boolean
 #  nom_banque             :string(255)
-#  passwd                 :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  admin                  :boolean
+#  login                  :string(255)
+#  crypted_password       :string(255)
+#  password_salt          :string(255)
+#  persistance_token      :string(255)
 #
 
 require 'test_helper'

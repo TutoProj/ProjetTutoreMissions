@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130207122131) do
+ActiveRecord::Schema.define(:version => 20130211145412) do
 
   create_table "frais_annexes", :force => true do |t|
     t.string   "natureDepense"
@@ -109,6 +109,11 @@ ActiveRecord::Schema.define(:version => 20130207122131) do
     t.datetime "updated_at",                            :null => false
   end
 
+  create_table "user_sessions", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "civilite"
     t.string   "nom"
@@ -121,10 +126,17 @@ ActiveRecord::Schema.define(:version => 20130207122131) do
     t.string   "departement"
     t.boolean  "rib_valide"
     t.string   "nom_banque"
-    t.string   "passwd"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
+    t.boolean  "admin"
+    t.string   "login"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
   end
+
+  add_index "users", ["login"], :name => "index users on login", :unique => true
+  add_index "users", ["persistence_token"], :name => "index users on persistance_token", :unique => true
 
   create_table "vehicule_persos", :force => true do |t|
     t.string   "numMineralogique"

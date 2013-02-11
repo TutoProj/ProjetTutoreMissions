@@ -33,6 +33,9 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.2)
+    authlogic (3.2.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -73,6 +76,8 @@ GEM
       activesupport (= 3.2.11)
       bundler (~> 1.0)
       railties (= 3.2.11)
+    rails3-generators (1.0.0)
+      railties (>= 3.0.0)
     railties (3.2.11)
       actionpack (= 3.2.11)
       activesupport (= 3.2.11)
@@ -113,10 +118,12 @@ PLATFORMS
 DEPENDENCIES
   active_enum
   annotate
+  authlogic
   coffee-rails (~> 3.2.1)
   jquery-rails
   json
   rails (= 3.2.11)
+  rails3-generators
   sass-rails (~> 3.2.3)
   simple_form
   sqlite3
