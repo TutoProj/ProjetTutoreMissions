@@ -34,6 +34,10 @@ ProjetTutoreMissions::Application.routes.draw do
   match 'login' => "user_sessions#new", :as => :login
   match 'logout' => "user_sessions#destroy", :as => :logout
 
+  get 'user/new'
+  post 'user/create'
+  get 'user/:id' => 'user#show'
+
   root :to => "home#index"
 
   # The priority is based upon order of creation:

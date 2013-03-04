@@ -24,25 +24,21 @@
 #
 
 class Civilites < ActiveEnum::Base
-  value 1 => "Mr"
-  value 2 => "Mme"
-  value 3 => "Mlle"
+  value :name => "Mr"
+  value :name => "Mme"
+  value :name => "Mlle"
 end
 
 class User < ActiveRecord::Base
   acts_as_authentic
 
-  attr_accessible :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :rib_valide, :admin, :password_confirmation
+  attr_accessible :login, :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :rib_valide, :admin, :password_confirmation
 
   attr_accessor :password_confirmation
 
   enumerate :civilite, :with => Civilites
   
   validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :login
-
-  validates :password, :confirmation => true
-
-  validates_confirmation_of :password
 
   has_many :missions
   

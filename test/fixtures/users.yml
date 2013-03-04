@@ -27,6 +27,7 @@
 
 one:
   civilite: Mr
+  login: MyString1
   nom: MyString
   prenom: MyString
   grade: MyString
@@ -44,6 +45,7 @@ one:
 
 two:
   civilite: Mr
+  login: MyString2
   nom: MyString
   prenom: MyString
   grade: MyString
@@ -54,5 +56,25 @@ two:
   departement: MyString
   rib_valide: false
   nom_banque: MyString
-  password: MyString
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt('passw1rd' + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
   admin: false
+
+guillaume:
+  civilite: Mr
+  login: guiggs
+  nom: Miranda
+  prenom: Guillaume
+  grade: Colonel
+  adresse_familiale: 28 rue de la Vaudiere
+  adresse_administrative: 45ème Régiment d'Infantrie
+  indice_majore: 10
+  equipe: Bleue
+  departement: CIA
+  rib_valide: false
+  nom_banque: TheGoodOne
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt('passw1rd' + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  admin: true

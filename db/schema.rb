@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211145412) do
+ActiveRecord::Schema.define(:version => 20130211225353) do
 
   create_table "frais_annexes", :force => true do |t|
     t.string   "natureDepense"
@@ -134,9 +134,6 @@ ActiveRecord::Schema.define(:version => 20130211145412) do
     t.string   "password_salt"
     t.string   "persistence_token"
   end
-
-  add_index "users", ["login"], :name => "index users on login", :unique => true
-  add_index "users", ["persistence_token"], :name => "index users on persistance_token", :unique => true
 
   create_table "vehicule_persos", :force => true do |t|
     t.string   "numMineralogique"

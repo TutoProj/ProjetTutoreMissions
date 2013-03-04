@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :login %>
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
     <%= f.input :civilite %>
   </div>
   <div class="field">
@@ -61,6 +65,10 @@
   <div class="field">
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="field">
+    <%= f.label :admin %>
+    <%= f.check_box :admin %>
   </div>
   <div class="actions">
     <%= f.submit %>

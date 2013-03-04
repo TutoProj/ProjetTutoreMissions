@@ -1,0 +1,338 @@
+Loaded suite /usr/lib/ruby/gems/1.8/gems/rake-10.0.3/lib/rake/rake_test_loader
+Started
+
+Finished in 0.000123 seconds.
+
+0 tests, 0 assertions, 0 failures, 0 errors
+Loaded suite /usr/lib/ruby/gems/1.8/gems/rake-10.0.3/lib/rake/rake_test_loader
+Started
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Finished in 2.198774 seconds.
+
+  1) Error:
+test_should_create_frais_annex(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  2) Error:
+test_should_destroy_frais_annex(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  3) Error:
+test_should_get_edit(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  4) Error:
+test_should_get_index(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  5) Error:
+test_should_get_new(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  6) Error:
+test_should_show_frais_annex(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  7) Error:
+test_should_update_frais_annex(FraisAnnexesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  8) Error:
+test_should_create_frais_deplacement(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+  9) Error:
+test_should_destroy_frais_deplacement(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+ 10) Error:
+test_should_get_edit(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+ 11) Error:
+test_should_get_index(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+ 12) Error:
+test_should_get_new(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:06', 'MyString', 'MyString')
+    
+
+ 13) Error:
+test_should_show_frais_deplacement(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 14) Error:
+test_should_update_frais_deplacement(FraisDeplacementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 15) Error:
+test_should_create_frais_hebergement(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 16) Error:
+test_should_destroy_frais_hebergement(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 17) Error:
+test_should_get_edit(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 18) Error:
+test_should_get_index(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 19) Error:
+test_should_get_new(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 20) Error:
+test_should_show_frais_hebergement(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 21) Error:
+test_should_update_frais_hebergement(FraisHebergementsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 22) Error:
+test_should_create_frais_repa(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 23) Error:
+test_should_destroy_frais_repa(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 24) Error:
+test_should_get_edit(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 25) Error:
+test_should_get_index(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 26) Error:
+test_should_get_new(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 27) Error:
+test_should_show_frais_repa(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 28) Error:
+test_should_update_frais_repa(FraisRepasControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 29) Error:
+test_should_get_index(HomeControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 30) Error:
+test_should_create_itineraire(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 31) Error:
+test_should_destroy_itineraire(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 32) Error:
+test_should_get_edit(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 33) Error:
+test_should_get_index(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 34) Error:
+test_should_get_new(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 35) Error:
+test_should_show_itineraire(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 36) Error:
+test_should_update_itineraire(ItinerairesControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 37) Error:
+test_should_create_mission(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 38) Error:
+test_should_destroy_mission(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 39) Error:
+test_should_get_edit(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 40) Error:
+test_should_get_index(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 41) Error:
+test_should_get_new(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 42) Error:
+test_should_show_mission(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:07', 'MyString', 'MyString')
+    
+
+ 43) Error:
+test_should_update_mission(MissionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 44) Error:
+test_should_create_moyen_transport(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 45) Error:
+test_should_destroy_moyen_transport(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 46) Error:
+test_should_get_edit(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 47) Error:
+test_should_get_index(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 48) Error:
+test_should_get_new(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 49) Error:
+test_should_show_moyen_transport(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 50) Error:
+test_should_update_moyen_transport(MoyenTransportsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 51) Error:
+test_should_get_new(UserSessionsControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 52) Error:
+test_should_create_user(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 53) Error:
+test_should_destroy_user(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 54) Error:
+test_should_get_edit(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 55) Error:
+test_should_get_index(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 56) Error:
+test_should_get_new(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 57) Error:
+test_should_show_user(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 58) Error:
+test_should_update_user(UsersControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 59) Error:
+test_should_create_vehicule_perso(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 60) Error:
+test_should_destroy_vehicule_perso(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 61) Error:
+test_should_get_edit(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 62) Error:
+test_should_get_index(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 63) Error:
+test_should_get_new(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 64) Error:
+test_should_show_vehicule_perso(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+ 65) Error:
+test_should_update_vehicule_perso(VehiculePersosControllerTest):
+ActiveRecord::StatementInvalid: SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("civilite", "rib_valide", "adresse_familiale", "grade", "updated_at", "indice_majore", "adresse_administrative", "prenom", "id", "nom", "admin", "equipe", "departement", "created_at", "password", "nom_banque") VALUES ('Mr', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 1, 'MyString', 'MyString', 298486374, 'MyString', 'f', 'MyString', 'MyString', '2013-02-11 22:03:08', 'MyString', 'MyString')
+    
+
+65 tests, 0 assertions, 0 failures, 65 errors
+Errors running test:functionals! #<RuntimeError: Command failed with status (1): [ruby -I"lib:test" -I"/usr/lib/ruby/gems/1.8/gems/rake-10.0.3/lib" "/usr/lib/ruby/gems/1.8/gems/rake-10.0.3/lib/rake/rake_test_loader.rb" "test/functional/**/*_test.rb" ]>
