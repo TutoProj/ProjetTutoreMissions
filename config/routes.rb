@@ -1,4 +1,6 @@
 ProjetTutoreMissions::Application.routes.draw do
+  devise_for :users
+
   get "home/index"
 
   get "user_sessions/new"

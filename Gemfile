@@ -5,6 +5,10 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'devise'
+
+gem 'prawn'
+
 group :development do
 	gem 'rspec-core'
 	gem 'rspec-rails'
@@ -42,8 +46,6 @@ gem 'active_enum'
 gem 'simple_form'
 
 gem 'jquery-rails'
-
-gem 'authlogic'
 
 gem 'rails3-generators'
 

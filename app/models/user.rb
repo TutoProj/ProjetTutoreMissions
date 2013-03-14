@@ -30,7 +30,14 @@ class Civilites < ActiveEnum::Base
 end
 
 class User < ActiveRecord::Base
-  acts_as_authentic
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable,
+  # :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
 
   attr_accessible :login, :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :rib_valide, :admin, :password_confirmation
 
