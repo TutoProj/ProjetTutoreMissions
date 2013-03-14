@@ -2,7 +2,7 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.active_enum :civilite
+      t.string :civilite
       t.string :nom
       t.string :prenom
       t.string :grade

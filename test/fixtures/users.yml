@@ -3,7 +3,7 @@
 # Table name: users
 #
 #  id                     :integer          not null, primary key
-#  civilite               :string(255)
+#  civilite               :integer
 #  nom                    :string(255)
 #  prenom                 :string(255)
 #  grade                  :string(255)
@@ -20,7 +20,7 @@
 #  login                  :string(255)
 #  crypted_password       :string(255)
 #  password_salt          :string(255)
-#  persistance_token      :string(255)
+#  persistence_token      :string(255)
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html

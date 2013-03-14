@@ -3,7 +3,7 @@
 # Table name: users
 #
 #  id                     :integer          not null, primary key
-#  civilite               :string(255)
+#  civilite               :integer
 #  nom                    :string(255)
 #  prenom                 :string(255)
 #  grade                  :string(255)
@@ -20,13 +20,13 @@
 #  login                  :string(255)
 #  crypted_password       :string(255)
 #  password_salt          :string(255)
-#  persistance_token      :string(255)
+#  persistence_token      :string(255)
 #
 
 class Civilites < ActiveEnum::Base
-  value :name => "Mr"
-  value :name => "Mme"
-  value :name => "Mlle"
+  value :id => 1, :name => "Mr"
+  value :id => 2, :name => "Mme"
+  value :id => 3, :name => "Mlle"
 end
 
 class User < ActiveRecord::Base
@@ -36,7 +36,11 @@ class User < ActiveRecord::Base
 
   attr_accessor :password_confirmation
 
-  enumerate :civilite, :with => Civilites
+  enumerate :civilite do 
+	value :name => "Mr"
+	value :name => "Mme"
+	value :name => "Mlle"
+  end
   
   validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :login
 

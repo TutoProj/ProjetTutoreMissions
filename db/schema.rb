@@ -10,7 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211225353) do
+ActiveRecord::Schema.define(:version => 20130314105907) do
+
+  create_table "Users", :force => true do |t|
+    t.integer  "civilite",               :limit => 255
+    t.string   "nom"
+    t.string   "prenom"
+    t.string   "grade"
+    t.string   "adresse_familiale"
+    t.string   "adresse_administrative"
+    t.integer  "indice_majore"
+    t.string   "equipe"
+    t.string   "departement"
+    t.boolean  "rib_valide"
+    t.string   "nom_banque"
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.boolean  "admin"
+    t.string   "login"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+  end
 
   create_table "frais_annexes", :force => true do |t|
     t.string   "natureDepense"
@@ -112,27 +133,6 @@ ActiveRecord::Schema.define(:version => 20130211225353) do
   create_table "user_sessions", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "civilite"
-    t.string   "nom"
-    t.string   "prenom"
-    t.string   "grade"
-    t.string   "adresse_familiale"
-    t.string   "adresse_administrative"
-    t.integer  "indice_majore"
-    t.string   "equipe"
-    t.string   "departement"
-    t.boolean  "rib_valide"
-    t.string   "nom_banque"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
-    t.boolean  "admin"
-    t.string   "login"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token"
   end
 
   create_table "vehicule_persos", :force => true do |t|
