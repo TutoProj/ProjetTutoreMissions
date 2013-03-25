@@ -7,7 +7,8 @@ gem 'rails', '3.2.11'
 
 gem 'devise'
 
-gem 'prawn'
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
 
 group :development do
 	gem 'rspec-core'
