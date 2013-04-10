@@ -143,6 +143,11 @@ ActiveRecord::Schema.define(:version => 20130314212412) do
     t.datetime "updated_at",                            :null => false
   end
 
+  create_table "user_sessions", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "vehicule_persos", :force => true do |t|
     t.string   "numMineralogique"
     t.integer  "puissanceVehicule"
