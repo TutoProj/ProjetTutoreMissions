@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Monsieur ou madame?:</b>
+  <b>Civilité :</b>
   <%= @user.civilite %>
 </p>
 
@@ -55,10 +55,6 @@
   <%= @user.nom_banque %>
 </p>
 
-<p>
-  <b>Mot de passe:</b>
-  <%= @user.passwd %>
-</p>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

@@ -7,9 +7,11 @@
   <!--[if IE 7]><%= stylesheet_link_tag 'ie7' %><![endif]-->
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8">
 </head>
 <body>
 
+<%= link_to('Accueil', home_index_path)  %>  
 <%= yield %>
 
 </body>
