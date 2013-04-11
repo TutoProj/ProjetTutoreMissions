@@ -1,19 +1,19 @@
-<h1>Listing users</h1>
+<h1>Liste des utilisateurs</h1>
 
 <table>
   <tr>
-    <th>Civilite</th>
-    <th>Nom</th>
-    <th>Prenom</th>
-    <th>Grade</th>
-    <th>Adresse familiale</th>
-    <th>Adresse administrative</th>
-    <th>Indice majore</th>
-    <th>Equipe</th>
-    <th>Departement</th>
-    <th>Rib valide</th>
-    <th>Nom banque</th>
-    <th>Passwd</th>
+    <th>Monsieur ou madame?</th>
+    <th>Nom de l'utilisateur</th>
+    <th>Prénom de l'utilisateur</th>
+    <th>Grade de l'utilisateur"</th>
+    <th>Adresse familiale de l'utilisateur</th>
+    <th>Adresse administratice de l'utilisateur</th>
+    <th>Indice majoré de l'utilisateur</th>
+    <th>Equipe de l'utilisateur</th>
+    <th>Département de l'utilisateur</th>
+    <th>Le rib est-il valide?</th>
+    <th>Nom de la banque</th>
+    <th>Mot de passe</th>
     <th></th>
     <th></th>
     <th></th>
@@ -35,7 +35,7 @@
     <td><%= user.passwd %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>

@@ -1,9 +1,9 @@
-<h1>Listing frais_deplacements</h1>
+<h1>Liste des frais de déplacement</h1>
 
 <table>
   <tr>
-    <th>Demandeavance</th>
-    <th>Regularisationdavance</th>
+    <th>Demande d'avance</th>
+    <th>Régularisation d'avance</th>
     <th>Forfait</th>
     <th>Montant</th>
     <th></th>
@@ -19,7 +19,7 @@
     <td><%= frais_deplacement.montant %></td>
     <td><%= link_to 'Show', frais_deplacement %></td>
     <td><%= link_to 'Edit', edit_frais_deplacement_path(frais_deplacement) %></td>
-    <td><%= link_to 'Destroy', frais_deplacement, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', frais_deplacement, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>
@@ -27,5 +27,3 @@
 <br />
 
 <%= link_to 'New Frais deplacement', new_frais_deplacement_path %>
-<br/>
-<%= link_to 'Accueil', home_index_path %>

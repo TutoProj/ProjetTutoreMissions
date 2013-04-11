@@ -1,12 +1,12 @@
-<h1>Listing frais_hebergements</h1>
+<h1>Liste des frais d'hébergement</h1>
 
 <table>
   <tr>
-    <th>Nbnuiteeavecfrais</th>
-    <th>Nbjustificatifs</th>
+    <th>Nombre de nuits avec frais</th>
+    <th>Nombre de justificatifs</th>
     <th>Montant</th>
-    <th>Rembourse</th>
-    <th>Logedansautrelogement</th>
+    <th>Remboursé?</th>
+    <th>Autre logement?</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,7 +21,7 @@
     <td><%= frais_hebergement.logeDansAutreLogement %></td>
     <td><%= link_to 'Show', frais_hebergement %></td>
     <td><%= link_to 'Edit', edit_frais_hebergement_path(frais_hebergement) %></td>
-    <td><%= link_to 'Destroy', frais_hebergement, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', frais_hebergement, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>
