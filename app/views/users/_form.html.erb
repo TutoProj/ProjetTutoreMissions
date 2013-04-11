@@ -70,6 +70,15 @@
     <%= f.label :admin %>
     <%= f.check_box :admin %>
   </div>
+  
+
+
+ <div>
+    <%= f.input :email, :required => false, :autofocus => true %>
+    <%= f.input :password, :required => false %>
+    <%= f.input :remember_me, :as => :boolean  %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -17,9 +17,9 @@
     <td><%= frais_annex.depense %></td>
     <td><%= frais_annex.nbJustificatifs %></td>
     <td><%= frais_annex.rembourse %></td>
-    <td><%= link_to 'Show', frais_annex %></td>
-    <td><%= link_to 'Edit', edit_frais_annex_path(frais_annex) %></td>
-    <td><%= link_to 'Destroy', frais_annex, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Afficher', frais_annex %></td>
+    <td><%= link_to 'Editer', edit_frais_annex_path(frais_annex) %></td>
+    <td><%= link_to 'Supprimer', frais_annex, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
@@ -27,5 +27,3 @@
 <br />
 
 <%= link_to 'Nouveau Frais annexe', new_frais_annex_path %>
-<br/>
-<%= link_to 'Accueil', home_index_path %>

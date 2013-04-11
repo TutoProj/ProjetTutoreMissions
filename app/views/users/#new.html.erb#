@@ -1,6 +1,6 @@
 <h1>Nouvel Utilisateur</h1>
 
 <%= render 'form' %>
-tezt
+
 
 <%= link_to 'Retour', users_path %>

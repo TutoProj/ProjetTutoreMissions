@@ -9,6 +9,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if user_signed_in? %>
+  <li>
+    <%= link_to('Logout',destroy_user_session_path, :method => :delete) %>
+  </li>
+  <% else %>
+  <li>
+    <%= link_to('Login',new_user_session_path) %>
+  </li>
+  <% end %>
+
+<%= link_to 'Accueil', home_index_path %>
 
 <h1>Application : gestion des missions</h1>
 
