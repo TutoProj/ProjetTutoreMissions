@@ -12,63 +12,43 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :login %>
-    <%= f.text_field :login %>
+    <%= f.input :civilite , :label =>"Monsieur ou madame?"%>
   </div>
   <div class="field">
-    <%= f.input :civilite %>
+    <%= f.text_field :nom , :label =>"Nom de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :nom %><br />
-    <%= f.text_field :nom %>
+    <%= f.text_field :prenom , :label =>"Prénom de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :prenom %><br />
-    <%= f.text_field :prenom %>
+    <%= f.text_field :grade , :label =>"Grade de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :grade %><br />
-    <%= f.text_field :grade %>
+    <%= f.text_field :adresse_familiale , :label =>"Adresse familiale de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :adresse_familiale %><br />
-    <%= f.text_field :adresse_familiale %>
+    <%= f.text_field :adresse_administrative , :label =>"Adresse administratice de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :adresse_administrative %><br />
-    <%= f.text_field :adresse_administrative %>
+    <%= f.number_field :indice_majore , :label =>"Indice majoré de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :indice_majore %><br />
-    <%= f.number_field :indice_majore %>
+    <%= f.text_field :equipe , :label =>"Equipe de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :equipe %><br />
-    <%= f.text_field :equipe %>
+    <%= f.text_field :departement , :label =>"Département de l'utilisateur"%>
   </div>
   <div class="field">
-    <%= f.label :departement %><br />
-    <%= f.text_field :departement %>
+    <%= f.check_box :rib_valide , :label =>"Le rib est-il valide?"%>
   </div>
   <div class="field">
-    <%= f.label :rib_valide %><br />
-    <%= f.check_box :rib_valide %>
+    <%= f.text_field :nom_banque , :label =>"Nom de la banque"%>
   </div>
   <div class="field">
-    <%= f.label :nom_banque %><br />
-    <%= f.text_field :nom_banque %>
+    <%= f.password_field :password , :label =>"Mot de passe"%>
   </div>
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="field">
-    <%= f.label :admin %>
-    <%= f.check_box :admin %>
+    <%= f.password_field :password_confirmation , :label =>"Confirmez le mot de passe"%>
   </div>
   
 
