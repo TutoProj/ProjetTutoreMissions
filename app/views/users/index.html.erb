@@ -40,4 +40,8 @@
 
 <br />
 
+    <% if current_user.admin? %>
 <%= link_to 'Nouvel utilisateur', new_user_path %>
+    <% end %>
+
+
