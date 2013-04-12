@@ -1,4 +1,7 @@
 class FraisAnnexesController < ApplicationController
+  before_filter :authenticate_admin!
+
+
   # GET /frais_annexes
   # GET /frais_annexes.json
   def index

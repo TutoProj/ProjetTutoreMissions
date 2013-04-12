@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130314212412) do
+ActiveRecord::Schema.define(:version => 20130412075632) do
+
+  create_table "Missions", :force => true do |t|
+    t.string   "compteUser"
+    t.integer  "NumConvention"
+    t.string   "destination"
+    t.string   "imputation"
+    t.integer  "numMarche"
+    t.boolean  "frais"
+    t.boolean  "permanant"
+    t.date     "dateDepart"
+    t.date     "dateRetour"
+    t.string   "motifDeplacement"
+    t.integer  "status",             :limit => 255
+    t.date     "dateClotureMission"
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+  end
 
   create_table "Users", :force => true do |t|
     t.integer  "civilite",               :limit => 255
@@ -46,6 +63,21 @@ ActiveRecord::Schema.define(:version => 20130314212412) do
 
   add_index "Users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "Users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "active_admin_comments", :force => true do |t|
+    t.string   "resource_id",   :null => false
+    t.string   "resource_type", :null => false
+    t.integer  "author_id"
+    t.string   "author_type"
+    t.text     "body"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "namespace"
+  end
+
+  add_index "active_admin_comments", ["author_type", "author_id"], :name => "index_active_admin_comments_on_author_type_and_author_id"
+  add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
+  add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
 
   create_table "frais_annexes", :force => true do |t|
     t.string   "natureDepense"
@@ -99,23 +131,6 @@ ActiveRecord::Schema.define(:version => 20130314212412) do
     t.boolean  "rembourse"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
-  end
-
-  create_table "missions", :force => true do |t|
-    t.string   "compteUser"
-    t.integer  "NumConvention"
-    t.string   "destination"
-    t.string   "imputation"
-    t.integer  "numMarche"
-    t.boolean  "frais"
-    t.boolean  "permanant"
-    t.date     "dateDepart"
-    t.date     "dateRetour"
-    t.string   "motifDeplacement"
-    t.string   "status"
-    t.date     "dateClotureMission"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
   end
 
   create_table "moyen_transports", :force => true do |t|

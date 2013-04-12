@@ -23,12 +23,6 @@
 #  persistence_token      :string(255)
 #
 
-class Civilites < ActiveEnum::Base
-  value :id => 1, :name => "Mr"
-  value :id => 2, :name => "Mme"
-  value :id => 3, :name => "Mlle"
-end
-
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

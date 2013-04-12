@@ -1,9 +1,11 @@
 ProjetTutoreMissions::Application.routes.draw do
+
+  root :to => "home#index"
+  ActiveAdmin.routes(self)
+
   devise_for :users
 
   get "home/index"
-
-  get "user_sessions/new"
 
   resources :frais_annexes
 
@@ -28,7 +30,6 @@ ProjetTutoreMissions::Application.routes.draw do
 
   resources :missions
 
-
   resources :users do 
     resources :missions do 
       resources :frais_annexes
@@ -41,17 +42,12 @@ ProjetTutoreMissions::Application.routes.draw do
     end
   end
 
+  resources :fichier_pdf
 
-  resources :user_sessions
-
-  match 'login' => "user_sessions#new", :as => :login
-  match 'logout' => "user_sessions#destroy", :as => :logout
-
-  get 'user/new'
-  post 'user/create'
-  get 'user/:id' => 'user#show'
-
-  root :to => "home#index"
+  get 'users/new'
+  post 'users/create'
+  get 'users/:id' => 'user#show'
+  get 'users/:id/mission/'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
