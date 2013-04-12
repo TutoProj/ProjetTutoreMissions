@@ -109,4 +109,15 @@ ProjetTutoreMissions::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+ 
+
+  devise_for :users
+
+  devise_scope :user do
+    root :to => "users/sessions#new"
+    get "sign_in", :to => "users/sessions#new"
+    get "sign_out", :to => "users/sessions#destroy"
+    get "sign_up", :to => "users/registrations#new"
+  end
+
 end

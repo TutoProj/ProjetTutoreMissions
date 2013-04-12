@@ -64,6 +64,8 @@ module ProjetTutoreMissions
 
 config.middleware.use PDFKit::Middleware, :print_media_type => true
 
+config.autoload_paths += %W(#{config.root}/lib)
+
   end
 end
 
