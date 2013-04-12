@@ -21,13 +21,9 @@
 #
 
 class Mission < ActiveRecord::Base
-  attr_accessible   :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :motifDeplacement,  :permanant, :status, :etranger
+  attr_accessible :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :motifDeplacement,  :permanant, :status, :etranger
 
   belongs_to :user
-
-  if current_user.admin? 
-    attr_accessible :NumConvention, :compteUser, :numMarche, :imputation
-  end
 
   has_many :frais_deplacements
   has_many :frais_repas

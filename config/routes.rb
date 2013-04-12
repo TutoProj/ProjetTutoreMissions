@@ -1,8 +1,8 @@
 ProjetTutoreMissions::Application.routes.draw do
 
-  get "fichier_pdf/frais_deplacements"
+  get "missions/ordre_mission"
 
-  get "fichier_pdf/ordre_mission"
+  get "mission/ordre_mission"
 
   root :to => "home#index"
   ActiveAdmin.routes(self)
@@ -10,8 +10,6 @@ ProjetTutoreMissions::Application.routes.draw do
   devise_for :users
 
   get "home/index"
-
-  resources :fichier_pdf, :member=> {:fichier_pdf => :get}
 
   resources :users do 
     resources :missions do 

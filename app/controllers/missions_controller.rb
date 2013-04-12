@@ -80,4 +80,18 @@ class MissionsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+   def ordre_mission
+    @mission = Mission.find(params[:id])
+
+    respond_to do |format|
+      if @mission.update_attributes(params[:mission])
+        format.html { redirect_to path_ordre_mission_pdf, :notice => 'Mission was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render :action => "ordre_mission" }
+        format.json { render :json => @mission.errors, :status => :unprocessable_entity }
+      end
+    end
+end
 end
