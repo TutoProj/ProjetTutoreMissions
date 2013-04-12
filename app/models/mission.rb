@@ -21,12 +21,12 @@
 #
 
 class Mission < ActiveRecord::Base
-  attr_accessible   :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :imputation, :motifDeplacement,  :permanant, :status
+  attr_accessible   :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :motifDeplacement,  :permanant, :status, :etranger
 
   belongs_to :user
 
   if current_user.admin? 
-    attr_accessible :NumConvention, :compteUser, :numMarche
+    attr_accessible :NumConvention, :compteUser, :numMarche, :imputation
   end
 
   has_many :frais_deplacements
@@ -40,5 +40,5 @@ class Mission < ActiveRecord::Base
     value :name => "Remboursé"    
   end
 
-  validates :dateClotureMission, :dateDepart, :dateRetour, :destination, :motifDeplacement :presence => true
+  validates :dateClotureMission, :dateDepart, :dateRetour, :destination, :motifDeplacement, :etranger, :presence => true
 end
