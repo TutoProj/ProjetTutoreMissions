@@ -14,7 +14,7 @@
     <td width="364"><div align="center">
       <p><strong>Ordre de mission</strong></p>
         <p align="left">
-          <input type="checkbox" name="En métropole" id="En métropole" />
+          <input type="checkbox" name="En métropole" id="En métropole" value = <% if @mission.etranger %> true <% else %> false <% end %>   />
           En métropole</p>
         <p align="left">
           <input type="checkbox" name="checkbox" id="checkbox" />

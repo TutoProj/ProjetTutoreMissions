@@ -21,7 +21,7 @@
 #
 
 class Mission < ActiveRecord::Base
-  attr_accessible   :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :motifDeplacement,  :permanant, :status, :etranger
+  attr_accessible :dateClotureMission, :dateDepart, :dateRetour, :destination, :frais, :motifDeplacement,  :permanant, :status, :etranger
 
   belongs_to :user
 
