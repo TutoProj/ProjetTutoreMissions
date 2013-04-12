@@ -53,11 +53,14 @@
     <td><%= moyen_transport.demandeAutorisationPonctuelleVehicule %></td>
     <td><%= link_to 'Afficher', moyen_transport %></td>
     <td><%= link_to 'Modifier', edit_moyen_transport_path(moyen_transport) %></td>
+    <% if current_user.admin? %>
     <td><%= link_to 'Supprimer', moyen_transport, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
+<% if current_user.admin? %>
 <%= link_to 'Nouveau moyen de transport', new_moyen_transport_path %>
+<% end %>

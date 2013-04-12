@@ -7,11 +7,7 @@ ProjetTutoreMissions::Application.routes.draw do
   root :to => "home#index"
   ActiveAdmin.routes(self)
 
-  devise_for :users
-
-  get "home/index"
-
-  resources :users do 
+ resources :users do 
     resources :missions do 
       resources :frais_annexes
       resources :frais_repas
@@ -22,6 +18,10 @@ ProjetTutoreMissions::Application.routes.draw do
       resources :moyen_transports
     end
   end
+
+  devise_for :users
+
+  get "home/index"
 
   resources :frais_annexes
 

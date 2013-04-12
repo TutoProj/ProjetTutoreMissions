@@ -21,11 +21,14 @@
     <td><%= vehicule_perso.academie %></td>
     <td><%= link_to 'Afficher', vehicule_perso %></td>
     <td><%= link_to 'Modifier', edit_vehicule_perso_path(vehicule_perso) %></td>
+    <% if current_user.admin? %>
     <td><%= link_to 'Supprimer', vehicule_perso, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
+<% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
+<% if current_user.admin? %>
 <%= link_to 'Nouveau véhicule personnel', new_vehicule_perso_path %>
+<% end %>

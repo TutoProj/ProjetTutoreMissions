@@ -35,11 +35,15 @@
     <td><%= mission.dateClotureMission %></td>
     <td><%= link_to 'Afficher', mission %></td>
     <td><%= link_to 'Modifier', edit_mission_path(mission) %></td>
+    <% if current_user.admin? %>
     <td><%= link_to 'Supprimer', mission, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
 
+<% if current_user.admin? %>
 <%= link_to 'Nouvelle mission', new_mission_path %>
+<% end %>
