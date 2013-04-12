@@ -1,0 +1,56 @@
+<%= simple_form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.input :civilite , :label =>"Monsieur ou madame?"%>
+  </div>
+  <div class="field">
+    <%= f.input :nom , :label =>"Nom de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :prenom , :label =>"Prenom de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :grade , :label =>"Grade de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :adresse_familiale , :label =>"Adresse familiale de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :adresse_administrative , :label =>"Adresse administratice de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :indice_majore , :label =>"Indice majore de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :equipe , :label =>"Equipe de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :departement , :label =>"Departement de l'utilisateur"%>
+  </div>
+  <div class="field">
+    <%= f.input :rib_valide , :label =>"Le rib est-il valide?"%>
+  </div>
+  <div class="field">
+    <%= f.input :nom_banque , :label =>"Nom de la banque"%>
+  </div>
+  <div class="field">
+    <%= f.input :password , :label =>"Mot de passe"%>
+  </div>
+  <div class="field">
+    <%= f.input :password_confirmation , :label =>"Confirmez le mot de passe"%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
