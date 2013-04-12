@@ -2,17 +2,17 @@
 
 <table>
   <tr>
-    <th>Monsieur ou madame?</th>
-    <th>Nom de l'utilisateur</th>
-    <th>Prénom de l'utilisateur</th>
-    <th>Grade de l'utilisateur"</th>
-    <th>Adresse familiale de l'utilisateur</th>
-    <th>Adresse administratice de l'utilisateur</th>
-    <th>Indice majoré de l'utilisateur</th>
-    <th>Equipe de l'utilisateur</th>
-    <th>Département de l'utilisateur</th>
-    <th>Le rib est-il valide?</th>
-    <th>Nom de la banque</th>
+    <th>Civilité    </th>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Grade</th>
+    <th>Adresse familiale</th>
+    <th>Adresse administrative</th>
+    <th>Indice majoré</th>
+    <th>Equipe</th>
+    <th>Département</th>
+    <th>RIB valide?</th>
+    <th>Banque</th>
     <th></th>
     <th></th>
     <th></th>
@@ -31,16 +31,22 @@
     <td><%= user.departement %></td>
     <td><%= user.rib_valide %></td>
     <td><%= user.nom_banque %></td>    
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+
+    <td><%= link_to 'Afficher', user %></td>
+    <td><%= link_to 'Modifier', edit_user_path(user) %></td>
     <% if current_user.admin? %>
-    <td><%= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
-    <% end %>
-  </tr>
+
+    <td><%= link_to 'Supprimer', user, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
+
+	<% end %>
 <% end %>
+</tr>
 </table>
 
 <br />
+
     <% if current_user.admin? %>
-        <%= link_to 'New User', new_user_path %>
+<%= link_to 'Nouvel utilisateur', new_user_path %>
     <% end %>
+
+
