@@ -1,22 +1,38 @@
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>  
-  </li>
-<% end %>
-
-
-
-<h1>Page d'accueil</h1>
+<div class="grid-12-12">
+<fieldset>
+<legend>AppliMission</legend>
+<div class="menuDiv">
+<fieldset  class="menu">
+<legend>Frais</legend>
 <p><%= link_to 'Frais annexes', frais_annexes_path %></p>
 <p><%= link_to 'Frais déplacement', frais_deplacements_path %></p>
 <p><%= link_to 'Frais hébergement', frais_hebergements_path %></p>
 <p><%= link_to 'Frais repas', frais_repas_path %></p>
+</fieldset>
+</div>
+<div class="menuDiv">
+<fieldset  class="menu">
+<legend>Déplacement</legend>
 <p><%= link_to 'Itinéraires', itineraires_path %></p>
-<p><%= link_to 'Missions', missions_path %></p>
 <p><%= link_to 'Moyens de transport', moyen_transports_path %></p>
-<p><%= link_to 'Utilisateurs', users_path %></p>
 <p><%= link_to 'Véhicule personnels', vehicule_persos_path %></p>
+</fieldset>
+</div>
+<div  class="menuDiv">
+<fieldset  class="menu">
+<legend>Gestion</legend>
+<p><%= link_to 'Missions', missions_path %></p>
+<p><%= link_to 'Utilisateurs', users_path %></p>
+</fieldset>
+</div>
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Se déconnecter', destroy_user_session_path, :method => :delete) %>        
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Se connecter', new_user_session_path)  %>  
+  </li>
+<% end %>
+</fieldset>
+</div>

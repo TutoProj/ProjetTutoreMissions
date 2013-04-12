@@ -28,4 +28,4 @@
 
 <br />
 
-<%= link_to 'Nouveau frais d\'hébergement', new_frais_hebergement_path %>
+<%= link_to 'New Frais hebergement', new_frais_hebergement_path %>

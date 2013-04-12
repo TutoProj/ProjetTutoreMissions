@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Civilité    </th>
+    <th>Civilité</th>
     <th>Nom</th>
     <th>Prénom</th>
     <th>Grade</th>
@@ -31,16 +31,11 @@
     <td><%= user.departement %></td>
     <td><%= user.rib_valide %></td>
     <td><%= user.nom_banque %></td>    
-
     <td><%= link_to 'Afficher', user %></td>
     <td><%= link_to 'Modifier', edit_user_path(user) %></td>
-    <% if current_user.admin? %>
-
     <td><%= link_to 'Supprimer', user, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
-
-	<% end %>
+  </tr>
 <% end %>
-</tr>
 </table>
 
 <br />

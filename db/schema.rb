@@ -10,7 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130412075632) do
+ActiveRecord::Schema.define(:version => 20130412104430) do
+
+  create_table "Itineraires", :force => true do |t|
+    t.integer  "distance"
+    t.date     "DateHeureDepartResidence"
+    t.date     "DateArriveeLieuMission"
+    t.date     "DateHeureDepartLieuMission"
+    t.date     "DateHeureRetourResidence",   :limit => 255
+    t.integer  "montant"
+    t.boolean  "rembourse"
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+  end
 
   create_table "Missions", :force => true do |t|
     t.string   "compteUser"
@@ -116,18 +128,6 @@ ActiveRecord::Schema.define(:version => 20130412075632) do
     t.integer  "montantAutres"
     t.boolean  "rembourse"
     t.integer  "nbRepasGratuits"
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-  end
-
-  create_table "itineraires", :force => true do |t|
-    t.integer  "distance"
-    t.date     "DateHeureDepartResidence"
-    t.date     "DateArriveeLieuMission"
-    t.date     "DateHeureDepartLieuMission"
-    t.string   "DateHeureRetourResidence"
-    t.integer  "montant"
-    t.boolean  "rembourse"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
   end

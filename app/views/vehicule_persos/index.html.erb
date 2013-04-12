@@ -19,13 +19,13 @@
     <td><%= vehicule_perso.DateAutorisationAnnuelleDUtilisation %></td>
     <td><%= vehicule_perso.departement %></td>
     <td><%= vehicule_perso.academie %></td>
-    <td><%= link_to 'Show', vehicule_perso %></td>
-    <td><%= link_to 'Edit', edit_vehicule_perso_path(vehicule_perso) %></td>
-    <td><%= link_to 'Destroy', vehicule_perso, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Afficher', vehicule_perso %></td>
+    <td><%= link_to 'Modifier', edit_vehicule_perso_path(vehicule_perso) %></td>
+    <td><%= link_to 'Supprimer', vehicule_perso, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Vehicule perso', new_vehicule_perso_path %>
+<%= link_to 'Nouveau véhicule personnel', new_vehicule_perso_path %>
