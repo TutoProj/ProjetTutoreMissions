@@ -13,7 +13,7 @@
 #  dateDepart         :date
 #  dateRetour         :date
 #  motifDeplacement   :string(255)
-#  status             :string(255)
+#  status             :integer
 #  dateClotureMission :date
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null

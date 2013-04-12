@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
-  attr_accessible :login, :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :rib_valide, :admin, :password_confirmation
+  attr_accessible :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :rib_valide, :admin, :password_confirmation
 
   attr_accessor :password_confirmation
 
@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
 	value :name => "Mlle"
   end
   
-  validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom, :login
+  validates_presence_of :adresse_administrative, :adresse_familiale, :civilite, :departement, :equipe, :grade, :indice_majore, :nom, :nom_banque, :password, :prenom
 
   has_many :missions
   
