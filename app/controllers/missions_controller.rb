@@ -1,3 +1,4 @@
+# -*- coding: undecided -*-
 class MissionsController < ApplicationController
   # GET /missions
   # GET /missions.json
@@ -44,7 +45,7 @@ class MissionsController < ApplicationController
 
     respond_to do |format|
       if @mission.save
-        format.html { redirect_to @mission, :notice => 'Mission was successfully created.' }
+        format.html { redirect_to @mission, :notice => 'La mission a bien été créée' }
         format.json { render :json => @mission, :status => :created, :location => @mission }
       else
         format.html { render :action => "new" }
@@ -60,7 +61,7 @@ class MissionsController < ApplicationController
 
     respond_to do |format|
       if @mission.update_attributes(params[:mission])
-        format.html { redirect_to @mission, :notice => 'Mission was successfully updated.' }
+        format.html { redirect_to @mission, :notice => 'La mission a bien été modifiée' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class FraisAnnexesController < ApplicationController
   before_filter :authenticate_user!
 
@@ -47,7 +48,7 @@ class FraisAnnexesController < ApplicationController
 
     respond_to do |format|
       if @frais_annex.save
-        format.html { redirect_to @frais_annex, :notice => 'Frais annex was successfully created.' }
+        format.html { redirect_to @frais_annex, :notice => 'Le frais annexe a bien été créé' }
         format.json { render :json => @frais_annex, :status => :created, :location => @frais_annex }
       else
         format.html { render :action => "new" }
@@ -63,7 +64,7 @@ class FraisAnnexesController < ApplicationController
 
     respond_to do |format|
       if @frais_annex.update_attributes(params[:frais_annex])
-        format.html { redirect_to @frais_annex, :notice => 'Frais annex was successfully updated.' }
+        format.html { redirect_to @frais_annex, :notice => 'Le frais annexe a bien été modifié' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

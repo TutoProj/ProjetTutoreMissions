@@ -1,3 +1,4 @@
+# -*- coding: undecided -*-
 class VehiculePersosController < ApplicationController
   # GET /vehicule_persos
   # GET /vehicule_persos.json
@@ -44,7 +45,7 @@ class VehiculePersosController < ApplicationController
 
     respond_to do |format|
       if @vehicule_perso.save
-        format.html { redirect_to @vehicule_perso, :notice => 'Vehicule perso was successfully created.' }
+        format.html { redirect_to @vehicule_perso, :notice => 'Le véhicule personnel a bien été ajouté' }
         format.json { render :json => @vehicule_perso, :status => :created, :location => @vehicule_perso }
       else
         format.html { render :action => "new" }
@@ -60,7 +61,7 @@ class VehiculePersosController < ApplicationController
 
     respond_to do |format|
       if @vehicule_perso.update_attributes(params[:vehicule_perso])
-        format.html { redirect_to @vehicule_perso, :notice => 'Vehicule perso was successfully updated.' }
+        format.html { redirect_to @vehicule_perso, :notice => 'Le véhicule personnel a bien été modifié' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

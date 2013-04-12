@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class FraisDeplacementsController < ApplicationController
   # GET /frais_deplacements
   # GET /frais_deplacements.json
@@ -44,7 +45,7 @@ class FraisDeplacementsController < ApplicationController
 
     respond_to do |format|
       if @frais_deplacement.save
-        format.html { redirect_to @frais_deplacement, :notice => 'Frais deplacement was successfully created.' }
+        format.html { redirect_to @frais_deplacement, :notice => 'Le frais de déplacement a bien été créé' }
         format.json { render :json => @frais_deplacement, :status => :created, :location => @frais_deplacement }
       else
         format.html { render :action => "new" }
@@ -60,7 +61,7 @@ class FraisDeplacementsController < ApplicationController
 
     respond_to do |format|
       if @frais_deplacement.update_attributes(params[:frais_deplacement])
-        format.html { redirect_to @frais_deplacement, :notice => 'Frais deplacement was successfully updated.' }
+        format.html { redirect_to @frais_deplacement, :notice => 'Le frais de déplacement a bien été modifié' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

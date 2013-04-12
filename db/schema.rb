@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130412104430) do
+ActiveRecord::Schema.define(:version => 20130412120901) do
 
   create_table "Itineraires", :force => true do |t|
     t.integer  "distance"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20130412104430) do
     t.date     "dateClotureMission"
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
+    t.boolean  "etranger"
   end
 
   create_table "Users", :force => true do |t|
