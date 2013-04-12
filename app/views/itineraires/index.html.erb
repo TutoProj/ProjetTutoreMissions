@@ -25,14 +25,13 @@
     <td><%= itineraire.rembourse %></td>
     <td><%= link_to 'Afficher', itineraire %></td>
     <td><%= link_to 'Modifier', edit_itineraire_path(itineraire) %></td>
-    <% if current_user.admin? %>
+   
     <td><%= link_to 'Supprimer', itineraire, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
-    <% end %>
+   
   </tr>
 <% end %>
 </table>
 
 <br />
-<% if current_user.admin? %>
+
 <%= link_to 'Nouvel itineraire', new_itineraire_path %>
-<% end %>

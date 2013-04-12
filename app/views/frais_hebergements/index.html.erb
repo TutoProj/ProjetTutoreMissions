@@ -21,15 +21,15 @@
     <td><%= frais_hebergement.logeDansAutreLogement %></td>
     <td><%= link_to 'Afficher', frais_hebergement %></td>
     <td><%= link_to 'Modifier', edit_frais_hebergement_path(frais_hebergement) %></td>
-    <% if current_user.admin? %>
+    
     <td><%= link_to 'Supprimer', frais_hebergement, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
-    <% end %>
+  
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<% if current_user.admin? %>
+
 <%= link_to 'Nouveau frais d\'hébergement', new_frais_hebergement_path %>
-<% end %>
+

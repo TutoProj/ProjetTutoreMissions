@@ -18,15 +18,14 @@
     <td><%= frais_annex.nbJustificatifs %></td>
     <td><%= frais_annex.rembourse %></td>
     <td><%= link_to 'Afficher', frais_annex %></td>
-    <% if current_user.admin? %>
+   
     <td><%= link_to 'Modifier', edit_frais_annex_path(frais_annex) %></td> 
     <td><%= link_to 'Supprimer', frais_annex, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
-    <% end %> 
+   
   </tr>
 <% end %>
 </table>
 
 <br />
-<% if current_user.admin? %>
+
 <%= link_to 'Nouveau frais annexe', new_frais_annex_path %>
-<% end %>

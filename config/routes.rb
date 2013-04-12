@@ -4,6 +4,8 @@ ProjetTutoreMissions::Application.routes.draw do
 
   get "mission/ordre_mission"
 
+  get "users/sign_in"
+
   root :to => "home#index"
   ActiveAdmin.routes(self)
 

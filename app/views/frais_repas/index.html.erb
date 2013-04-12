@@ -29,15 +29,15 @@
     <td><%= frais_repa.nbRepasGratuits %></td>
     <td><%= link_to 'Afficher', frais_repa %></td>
     <td><%= link_to 'Modifier', edit_frais_repa_path(frais_repa) %></td>
-    <% if current_user.admin? %>
+   
     <td><%= link_to 'Supprimer', frais_repa, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
-    <% end %>
+
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<% if current_user.admin? %>
+
 <%= link_to 'Nouveau frais de repas', new_frais_repa_path %>
-<% end %>
+
