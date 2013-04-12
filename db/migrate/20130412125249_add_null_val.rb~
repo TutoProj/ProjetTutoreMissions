@@ -1,0 +1,9 @@
+class AddNullVal < ActiveRecord::Migration
+  def up
+    change_table :users do |t|
+      t.boolean :admin, :default => false
+  end
+
+  def down
+  end
+end

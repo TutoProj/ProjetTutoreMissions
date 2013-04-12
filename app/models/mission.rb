@@ -25,10 +25,6 @@ class Mission < ActiveRecord::Base
 
   belongs_to :user
 
-  if current_user.admin? 
-    attr_accessible :NumConvention, :compteUser, :numMarche, :imputation
-  end
-
   has_many :frais_deplacements
   has_many :frais_repas
   has_many :frais_hebergements
