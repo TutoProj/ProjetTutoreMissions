@@ -1,5 +1,9 @@
 ProjetTutoreMissions::Application.routes.draw do
 
+  get "fichier_pdf/frais_deplacements"
+
+  get "fichier_pdf/ordre_mission"
+
   root :to => "home#index"
   ActiveAdmin.routes(self)
 
@@ -7,28 +11,7 @@ ProjetTutoreMissions::Application.routes.draw do
 
   get "home/index"
 
-  resources :frais_annexes
-
-
-  resources :frais_repas
-
-
-  resources :frais_hebergements
-
-
-  resources :itineraires
-
-
-  resources :vehicule_persos
-
-
-  resources :frais_deplacements
-
-
-  resources :moyen_transports
-
-
-  resources :missions
+  resources :fichier_pdf, :member=> {:fichier_pdf => :get}
 
   resources :users do 
     resources :missions do 
@@ -42,7 +25,25 @@ ProjetTutoreMissions::Application.routes.draw do
     end
   end
 
+  resources :frais_annexes
+
+  resources :frais_repas
+
+  resources :frais_hebergements
+
+  resources :itineraires
+
+  resources :vehicule_persos
+
+  resources :frais_deplacements
+
+  resources :moyen_transports
+
+  resources :missions
+
   resources :fichier_pdf
+
+  
 
   get 'users/new'
   post 'users/create'

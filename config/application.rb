@@ -62,8 +62,7 @@ module ProjetTutoreMissions
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-config.middleware.use PDFKit::Middleware, :print_media_type => true
-
+    config.middleware.use PDFKit::Middleware, :print_media_type => true, :only => [%r[^/ordre_mission], %r[^/frais_deplacements]]
   end
 end
 
