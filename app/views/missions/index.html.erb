@@ -33,9 +33,9 @@
     <td><%= mission.motifDeplacement %></td>
     <td><%= mission.status %></td>
     <td><%= mission.dateClotureMission %></td>
-    <td><%= link_to 'Show', mission %></td>
-    <td><%= link_to 'Edit', edit_mission_path(mission) %></td>
-    <td><%= link_to 'Destroy', mission, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Afficher', mission %></td>
+    <td><%= link_to 'Modifier', edit_mission_path(mission) %></td>
+    <td><%= link_to 'Supprimer', mission, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>

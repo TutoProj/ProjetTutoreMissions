@@ -5,7 +5,7 @@
     <%= f.input :avion ,:label=>"Avion?"%>
     <%= f.input :parkingAeroport ,:label=>"Utilisation du parking de l'aeroport?"%>
     <%= f.input :train ,:label=>"Train?"%>
-    <%= f.input :classe ,:label=>"Quelle classe?"%>
+    <%= f.input :classe ,:label=>"En 1ère classe?"%>
     <%= f.input :parkingGare ,:label=>"Utilisation du parking de la gare?"%>
     <%= f.input :reservation ,:label=>"Reservation?"%>
     <%= f.input :couchette ,:label=>"Avec couchette?"%>
@@ -25,7 +25,7 @@
     <%= f.input :demandeAutorisationPonctuelleVehicule ,:label=>"Demander une autorisation ponctuelle pour ce vehicule?"%>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="grid-12-12" class="form-actions">
+    <%= f.button :submit, :value=>"Valider" %>
   </div>
 <% end %>

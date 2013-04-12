@@ -1,3 +1,4 @@
+# -*- coding: undecided -*-
 class MoyenTransportsController < ApplicationController
   # GET /moyen_transports
   # GET /moyen_transports.json
@@ -44,7 +45,7 @@ class MoyenTransportsController < ApplicationController
 
     respond_to do |format|
       if @moyen_transport.save
-        format.html { redirect_to @moyen_transport, :notice => 'Moyen transport was successfully created.' }
+        format.html { redirect_to @moyen_transport, :notice => 'Le moyen de transport a bien été ajouté' }
         format.json { render :json => @moyen_transport, :status => :created, :location => @moyen_transport }
       else
         format.html { render :action => "new" }
@@ -60,7 +61,7 @@ class MoyenTransportsController < ApplicationController
 
     respond_to do |format|
       if @moyen_transport.update_attributes(params[:moyen_transport])
-        format.html { redirect_to @moyen_transport, :notice => 'Moyen transport was successfully updated.' }
+        format.html { redirect_to @moyen_transport, :notice => 'Le moyen de transport a bien été modifié' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

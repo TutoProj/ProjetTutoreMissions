@@ -1,3 +1,4 @@
+# -*- coding: undecided -*-
 class ItinerairesController < ApplicationController
   # GET /itineraires
   # GET /itineraires.json
@@ -44,7 +45,7 @@ class ItinerairesController < ApplicationController
 
     respond_to do |format|
       if @itineraire.save
-        format.html { redirect_to @itineraire, :notice => 'Itineraire was successfully created.' }
+        format.html { redirect_to @itineraire, :notice => 'L\'itinéraire a bien été créé' }
         format.json { render :json => @itineraire, :status => :created, :location => @itineraire }
       else
         format.html { render :action => "new" }
@@ -60,7 +61,7 @@ class ItinerairesController < ApplicationController
 
     respond_to do |format|
       if @itineraire.update_attributes(params[:itineraire])
-        format.html { redirect_to @itineraire, :notice => 'Itineraire was successfully updated.' }
+        format.html { redirect_to @itineraire, :notice => 'L\'itinéraire a bien été modifié' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

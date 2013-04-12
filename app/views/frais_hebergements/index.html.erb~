@@ -1,0 +1,31 @@
+<h1>Liste des frais d'hébergement</h1>
+
+<table>
+  <tr>
+    <th>Nombre de nuits avec frais</th>
+    <th>Nombre de justificatifs</th>
+    <th>Montant</th>
+    <th>Remboursé?</th>
+    <th>Autre logement?</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @frais_hebergements.each do |frais_hebergement| %>
+  <tr>
+    <td><%= frais_hebergement.nbNuiteeAvecFrais %></td>
+    <td><%= frais_hebergement.nbJustificatifs %></td>
+    <td><%= frais_hebergement.montant %></td>
+    <td><%= frais_hebergement.rembourse %></td>
+    <td><%= frais_hebergement.logeDansAutreLogement %></td>
+    <td><%= link_to 'Afficher', frais_hebergement %></td>
+    <td><%= link_to 'Modifier', edit_frais_hebergement_path(frais_hebergement) %></td>
+    <td><%= link_to 'Supprimer', frais_hebergement, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Frais hebergement', new_frais_hebergement_path %>

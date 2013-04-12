@@ -2,27 +2,27 @@
 
 <table>
   <tr>
-    <th>Avion?</th>
-    <th>Utilisation du parking de l'aéroport?</th>
-    <th>Train?</th>
-    <th>Quelle classe?</th>
-    <th>Utilisation du parking de la gare?</th>
+    <th>Avion</th>
+    <th>Parking aéroport</th>
+    <th>Train</th>
+    <th>1ère classe?</th>
+    <th>Parking gare</th>
     <th>Réservation?</th>
-    <th>Avec couchette?</th>
-    <th>Dans un wagon lit?</th>
-    <th>Un supplément?</th>
-    <th>Taxi?</th>
-    <th>Location de véhicule?</th>
-    <th>Metro?</th>
-    <th>RER?</th>
-    <th>Autobus?</th>
-    <th>Tramway?</th>
-    <th>Mission avec transport?</th>
-    <th>Véhicule administratif?</th>
-    <th>Frais d'autoroute?</th>
-    <th>Frais de parking?</th>
-    <th>Utilisation du véhicule personnel?</th>
-    <th>Demander une autorisation ponctuelle pour ce véhicule?</th>
+    <th>Couchette?</th>
+    <th>Wagon lit?</th>
+    <th>Supplément?</th>
+    <th>Taxi</th>
+    <th>Location véhicule</th>
+    <th>Metro</th>
+    <th>RER</th>
+    <th>Autobus</th>
+    <th>Tramway</th>
+    <th>Mission avec transport</th>
+    <th>Véhicule administratif</th>
+    <th>Frais autoroute</th>
+    <th>Frais parking</th>
+    <th>Véhicule personnel</th>
+    <th>Autorisation ponctuelle?</th>
     <th></th>
     <th></th>
     <th></th>
@@ -51,13 +51,13 @@
     <td><%= moyen_transport.parking %></td>
     <td><%= moyen_transport.vehiculePerso %></td>
     <td><%= moyen_transport.demandeAutorisationPonctuelleVehicule %></td>
-    <td><%= link_to 'Show', moyen_transport %></td>
-    <td><%= link_to 'Edit', edit_moyen_transport_path(moyen_transport) %></td>
-    <td><%= link_to 'Destroy', moyen_transport, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Afficher', moyen_transport %></td>
+    <td><%= link_to 'Modifier', edit_moyen_transport_path(moyen_transport) %></td>
+    <td><%= link_to 'Supprimer', moyen_transport, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Moyen transport', new_moyen_transport_path %>
+<%= link_to 'Nouveau moyen de transport', new_moyen_transport_path %>

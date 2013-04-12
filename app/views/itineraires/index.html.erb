@@ -23,13 +23,13 @@
     <td><%= itineraire.DateHeureRetourResidence %></td>
     <td><%= itineraire.montant %></td>
     <td><%= itineraire.rembourse %></td>
-    <td><%= link_to 'Show', itineraire %></td>
-    <td><%= link_to 'Edit', edit_itineraire_path(itineraire) %></td>
-    <td><%= link_to 'Destroy', itineraire, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Afficher', itineraire %></td>
+    <td><%= link_to 'Modifier', edit_itineraire_path(itineraire) %></td>
+    <td><%= link_to 'Supprimer', itineraire, :method => :delete, :data => { :confirm => 'Etes-vous sur?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Itineraire', new_itineraire_path %>
+<%= link_to 'Nouvel itineraire', new_itineraire_path %>
