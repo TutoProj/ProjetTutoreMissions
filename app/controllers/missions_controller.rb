@@ -40,7 +40,7 @@ class MissionsController < ApplicationController
   # POST /missions
   # POST /missions.json
   def create
-    @mission = Mission.new(params[:mission])
+    @mission = Mission.new(params[:mission],:status=>"Aucun")
 
     respond_to do |format|
       if @mission.save
