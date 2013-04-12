@@ -1,5 +1,5 @@
 class FraisAnnexesController < ApplicationController
-  before_filter :authenticate_admin_user!
+  before_filter :authenticate_user!
 
 
   # GET /frais_annexes

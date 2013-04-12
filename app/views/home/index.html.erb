@@ -1,4 +1,4 @@
-<div class="grid-12-12">
+<div class="menuDivPrinc" class="grid-12-12">
 <fieldset>
 <legend>AppliMission</legend>
 <div class="menuDiv">
@@ -25,6 +25,7 @@
 <p><%= link_to 'Utilisateurs', users_path %></p>
 </fieldset>
 </div>
+<div id="Log">
 <% if user_signed_in? %>
   <li>
   <%= link_to('Se déconnecter', destroy_user_session_path, :method => :delete) %>        
@@ -34,5 +35,6 @@
   <%= link_to('Se connecter', new_user_session_path)  %>  
   </li>
 <% end %>
+</div>
 </fieldset>
 </div>

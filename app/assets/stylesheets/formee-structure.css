@@ -203,7 +203,19 @@ margin-left:3%;
 margin-top:-3%;
 }
 
-#BoutonAccueil{
-margin-left: 50%;
+.menuDivPrinc{
+margin-top:-2%;
+padding-top:2%;
+}
 
+#BoutonAccueil{
+text-align:center;
+width:7%;
+margin:auto;
+font-size:2em;
+}
+
+#Log{
+position:absolute;
+bottom : 0%;
 }
