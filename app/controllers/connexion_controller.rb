@@ -1,2 +1,0 @@
-class ConnexionController < ApplicationController
-end
