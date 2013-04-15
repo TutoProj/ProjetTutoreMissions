@@ -14,6 +14,7 @@ class CreateUsers < ActiveRecord::Migration
       t.boolean :rib_valide
       t.string :nom_banque
       t.string :passwd
+      t.boolean :admin
 
       t.timestamps
     end

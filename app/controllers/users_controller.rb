@@ -1,10 +1,15 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
+
 class UsersController < ApplicationController
+  before_filter :authenticate_user!
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
-
+    if current_user.admin? 
+      @users = User.all
+    else 
+      @users = [current_user]
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @users }
@@ -14,8 +19,11 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    if current_user.admin?
     @user = User.find(params[:id])
-
+    else
+      @user = current_user
+    end
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @user }
@@ -45,6 +53,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        sign_in @user
+        sign_in @user, :bypass => true 
         format.html { redirect_to @user, :notice => 'L\'utilisateur a bien été ajouté' }
         format.json { render :json => @user, :status => :created, :location => @user }
       else

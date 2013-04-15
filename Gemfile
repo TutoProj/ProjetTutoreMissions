@@ -5,6 +5,8 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'thin'
+gem 'rake', '=10.0.4'
 gem 'devise'
 gem 'activeadmin'
 gem 'meta_search',    '>= 1.1.0.pre'

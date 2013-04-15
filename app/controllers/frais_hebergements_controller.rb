@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 class FraisHebergementsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /frais_hebergements
   # GET /frais_hebergements.json
   def index

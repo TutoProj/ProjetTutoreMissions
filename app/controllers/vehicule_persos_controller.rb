@@ -1,5 +1,6 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
 class VehiculePersosController < ApplicationController
+  before_filter :authenticate_user!
   # GET /vehicule_persos
   # GET /vehicule_persos.json
   def index

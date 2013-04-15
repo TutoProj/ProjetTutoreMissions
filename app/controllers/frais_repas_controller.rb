@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 class FraisRepasController < ApplicationController
+  before_filter :authenticate_user!
   # GET /frais_repas
   # GET /frais_repas.json
   def index

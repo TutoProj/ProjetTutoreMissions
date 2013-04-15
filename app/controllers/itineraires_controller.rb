@@ -1,5 +1,6 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
 class ItinerairesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /itineraires
   # GET /itineraires.json
   def index

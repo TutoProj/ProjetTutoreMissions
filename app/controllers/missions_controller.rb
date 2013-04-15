@@ -1,10 +1,13 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
 class MissionsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /missions
   # GET /missions.json
   def index
-    @missions = Mission.all
-
+    if current_user.admin?
+      @missions = Mission.all
+    else
+      @missions = current_user.missions
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @missions }
@@ -25,7 +28,7 @@ class MissionsController < ApplicationController
   # GET /missions/new
   # GET /missions/new.json
   def new
-    @mission = Mission.new
+    @mission = current_user.missions.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,7 +44,7 @@ class MissionsController < ApplicationController
   # POST /missions
   # POST /missions.json
   def create
-    @mission = Mission.new(params[:mission],:status=>"Aucun")
+    @mission = current_user.missions.new(params[:mission],:status=>"Aucun")
 
     respond_to do |format|
       if @mission.save

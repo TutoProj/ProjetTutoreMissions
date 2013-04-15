@@ -1,5 +1,6 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
 class MoyenTransportsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /moyen_transports
   # GET /moyen_transports.json
   def index
